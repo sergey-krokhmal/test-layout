@@ -1,0 +1,16 @@
+body{
+	margin: 0;
+}
+
+#header{
+	background-color: #222533;
+	height: 51px;
+}
+
+#footer{
+	background-color: #222533;
+}
+
+#top-footer{
+	margin-top: 80px;
+}
