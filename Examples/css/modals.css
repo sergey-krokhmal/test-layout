@@ -1,0 +1,204 @@
+.dlg-enter-prepay {
+	display:none;
+	font-size: 12pt;
+	overflow: visible;
+}
+
+.dlg-title {
+	background: #ddd;
+    border-radius: 5px;
+    height: 30px;
+    padding: 3px 10px 0;
+	margin: 0 5px 10px 0;
+	box-shadow: 1px 1px 2px black;
+}
+
+.dlg-textbox {
+	margin-bottom: 10px;
+}
+
+.dlg-check {
+	margin-bottom: 10px;
+}
+
+.dlg-btn {
+	background: rgba(0, 0, 0, 0) linear-gradient(to top, #dbdbdb, #ffffff) repeat scroll 0 0;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px black;
+    margin: 0 10px 5px 0;
+    padding: 3px;
+	float: right;
+}
+
+.dlg-text p{
+	margin: 10px 0;
+}
+
+.dlg-text {
+	margin-bottom: 10px;
+}
+
+#text-issue-order {
+	width: 320px;
+}
+
+#pay_sum {
+	width: 100px;
+	text-align: right;
+}
+
+.link_order_z a#entered_prepay {
+	color: #debb68;
+}
+
+#print_doc {
+	color: #ffffff;
+    font-family: "SegoeUIRegular";
+    font-size: 12px;
+	height: 27px;
+    padding-top: 13px;
+	cursor: pointer;
+	position: relative;
+}
+
+#print_doc_menu {
+	background: #414141;
+	padding: 0;
+	margin: 39px 0 0;
+	list-style: none;
+	position: absolute;
+	top: 0;
+	display: none;
+	z-index: 20;
+}
+
+.print_doc_menu_item {
+	padding: 4px 10px 5px;
+	width: 95px;
+}
+
+.print_doc_menu_item:hover {
+	background: #222;
+}
+
+#print_doc:hover > #print_doc_menu {
+	display: block;
+}
+
+.edit_ico {
+	background: url("../img/edit.jpg") no-repeat;
+    float: left;
+    height: 12px;
+    margin: 2px 5px;
+    width: 12px;
+}
+
+.editable_field {
+	cursor: pointer;
+}
+
+#field_new_value {
+	
+}
+
+#text-add-order {
+	width: 100%;
+	padding-right: 1px;
+}
+
+.ao_input_table {
+	width: 500px;
+	margin-right:2px;
+}
+
+.ao_field {
+	width: 100%;
+}
+.ao_oi_field {
+	width: 97%;
+}
+
+.more-btn-stripe {
+	width: 100%;
+	float: left;
+}
+
+#items_input_table {
+	margin-bottom: 10px;
+}
+
+#dlg-btn-more_items {
+	float:left;
+	width: 60px;
+}
+
+#dlg-btn-remove-item {
+	float:left;
+	width: 60px;
+}
+
+.ao_field[name='add_order_item_articul'] {
+	width: 91%;
+}
+
+.ao_field[name='add_order_item_name'] {
+	width: 98%;
+}
+.ao_field[name='add_order_item_count'] {
+	width: 87%;
+}
+.ao_field[name='add_order_item_price'] {
+	width: 90%;
+}
+
+.order-btn {
+	background: #414141 none repeat scroll 0 0;
+    border-radius: 10px;
+	height: 25px;
+    color: white;
+    float: left;
+}
+
+#edit_order_add_item  {
+	float: left;
+}
+
+#edit_order_confirm_item {
+	display: none;
+	float: left;
+}
+
+#edit_order_cancel_item {
+	display: none;
+}
+
+#edit_order_cancel_edit{
+	display: none;
+}
+
+#edit_order_confirm_edit {
+	display: none;
+}
+
+.last_product_list_tr {
+	
+}
+
+.edit_order_input_item{
+	width: 100%;
+}
+
+.ao_field[name='add_order_address'] {
+	display:none;
+}
+
+textarea[name='field_ta_new_value'] {
+	display:none;
+	width: 100%;
+}
+
+.canceled_comment {
+	width: 200px;
+	height: 60px;
+	resize: vertical;
+}

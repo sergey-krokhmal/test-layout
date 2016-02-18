@@ -1,0 +1,41 @@
+#order_comments {
+	float: left;
+    margin: 20px 0 0 10px;
+    width: 85%;
+}
+
+#order_comment_list {
+	width: 100%;
+}
+
+#order_comment_list {
+	font-size: 10pt;
+	width:100%;
+}
+
+#order_comment_list td:nth-child(1){
+	color: gray;
+}
+
+#order_comment_list tr:nth-child(odd){
+	background: #f0f7ff;
+}
+
+#btn-add-order-comment {
+	float: right;
+	margin-right: -7px;
+}
+
+.order_comment {
+	margin-top: 20px;
+}
+
+#new_order_comment {
+	margin-right: 10px;
+}
+
+#new_order_comment_ta {
+	width: 100%;
+	height: 50px;
+	resize: vertical;
+}

@@ -1,0 +1,96 @@
+.reports {
+	width: 95%;
+	margin: 0px auto;
+}
+
+.reports_content {
+	width: 100%;
+	float: left;
+}
+
+.reports_table {
+    border: 1px solid #414141;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.reports_table tr:nth-child(1) {
+	background-color: #414141;
+	color: white;
+	font-family: "SegoeUIBold";
+}
+
+.reports_table tr td {
+	border: 1px solid #414141;
+	padding: 3px;
+}
+
+.rt_hovered_row{
+	cursor: pointer;
+}
+
+.rt_hovered_row:hover {
+	background-color: #ddd;
+}
+
+.reports_tool_bar {
+	float: left;
+	width: 100%;
+}
+.report_radio_filter {
+	float: left;
+	margin: 7px;
+	cursor: pointer;
+}
+
+.report_radio_filter [name="report_filter"] {
+	cursor: pointer;
+}
+
+.report_user_filter {
+	float: left;
+    width: 100%;
+	margin: 10px 0;
+}
+
+.report_drop_down {
+	height: 25px;
+}
+
+.report_menu {
+	width: 100%;
+    background-color: #414141;
+    /* height: 40px; */
+    padding-bottom: 3px;
+    color: white;
+    font-size: 10pt;
+    float: left;
+}
+
+.selected_report_menu a{
+	color: #debb68;
+}
+
+.report_menu .report_radio_filter {
+	color: white;
+}
+
+.report_radio_filter [name="report_time"] {
+	display: none;
+}
+
+.selected_filter {
+	color: #debb68 !important;
+}
+
+.report_date_period {
+	margin-left: 10px;
+    margin-top: 7px;
+    float: left;
+}
+
+.report_date_period .period_datepicker {
+	width: 75px;
+	cursor: pointer;
+}

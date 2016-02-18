@@ -1,0 +1,210 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.services {
+	float: left;
+	width: 100%;
+}
+
+.services_content {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.services_table {
+	width: 100%;
+	float:left;
+	border: 1px solid #ddd;
+	border-spacing: 0;
+	border-collapse: collapse;
+	font-size: 11pt;
+	margin-bottom: 20px;
+}
+
+.services_table tr{
+	height: 32px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.services_table tr:nth-child(1){
+	background: #414141;
+	color:white;
+}
+
+.services_table tr td{
+	padding: 5px;
+    border: 1px solid #ddd;
+    height: 25px;
+}
+
+.service_time a{
+	text-decoration: none;
+	color: #428bca;
+}
+
+.service_time a:hover{
+	text-decoration: underline;
+	color: #2a6496;
+}
+
+
+.accepted_service .service_status {
+	color: green;
+}
+
+.canceled_service .service_status {
+	color: red;
+}
+
+.accepted_service:hover {
+	background: #d0e9c6;
+}
+
+.accepted_service {
+	background: #A7DB92;
+}
+
+.canceled_service:hover {
+	background: #ebcccc;
+}
+
+.canceled_service {
+	background: #f2dede;
+}
+
+.services_tool_bar {
+	margin: 0 auto;
+	float: left;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.service_button {
+	border-radius: 4px;
+	border: 1px solid #adadad;
+	text-decoration: none;
+	padding: 5px 8px;
+	color: #343434;
+	background-color: white;
+	font-size: 12pt;
+	float: left;
+	margin-right: 5px;
+}
+
+.service_button:hover {
+	background: #ebebeb;
+}
+
+.service_button:active {
+	background: #ddd;
+}
+
+.breadcrumbs {
+	background-color: #414141;
+	padding: 5px 10px 8px;
+	color: white;
+}
+
+.breadcrumbs a{
+	text-decoration: none;
+	color: white;
+}
+
+.breadcrumbs span{
+	color: #888;
+}
+
+.breadcrumbs a:hover{
+	text-decoration: underline;
+
+}
+
+.add_service{
+	margin-top:10px;
+}
+
+.add_service input{
+	width: 98%;
+	font-size: 11pt;
+	height: 20px;
+}
+
+.add_service select{
+	width: 100%;
+	font-size: 11pt;
+	height: 30px;
+}
+
+.add_service tr {
+	height: 35px;
+}
+
+.add_service .service_button{
+	margin-top: 20px;
+}
+
+.add_service_datetime {
+	width: 46% !important;
+}
+
+.service_timeline_table{
+	margin-top: 10px;
+	border-spacing: 0;
+	border-collapse: collapse;
+	font-size: 10pt;
+}
+
+.pick_timeline{
+	width: 2px;
+	background-color: #b8b8b8;
+}
+
+.pick_timeline:hover {
+	background-color: #414141;
+}
+
+.pick_timeline_work{
+	background-color: green;
+}
+
+.timeline_find {
+	margin: 20px 0;
+	width: 100%;
+    float: left;
+}
+
+.timeline_find form{
+	width: 300px;
+	float: left;
+}
+.date_services {
+	margin-top: 25px;
+	float: left;
+}
+
+.service_edit_button {
+	border: 1px solid #eee;
+    height: 100%;
+    float: left;
+    padding: 3px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.toggle_season{
+	color: #428bca;
+	cursor: pointer;
+	text-decoration: underline;
+	float:left;
+}
+
+.toggle_preview {
+	color: #428bca;
+	cursor: pointer;
+	text-decoration: underline;
+	margin-bottom: 15px;
+    float: left;
+}
