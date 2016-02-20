@@ -1,12 +1,44 @@
+/* FONTS */
+
+@font-face {
+    font-family: "LatoRegular";
+    src: url("../fonts/LatoCirillic/Lato-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "LatoRegular";
+    src: url("../fonts/LatoCirillic/Lato-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "LatoRegular";
+    src: url("../fonts/LatoCirillic/Lato-Italic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "LatoRegular";
+    src: url("../fonts/LatoCirillic/Lato-BoldItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* MAIN */
 body {
 	margin: 0;
-	font-family: 'Lato', sans-serif;
+	font-family: 'LatoRegular', sans-serif;
 }
 
 .no-margin  {
 	margin:0 !important;
 }
 
+/* HEADER */
 .top-header {
 	background-color: #222533;
 	height: 50px;
@@ -18,7 +50,7 @@ body {
 .top-nav {
 	margin: 0 auto;
 	width: 1170px;
-	letter-spacing: 0.05em;
+	height: 100%;
 }
 
 .top-nav-list {
@@ -55,9 +87,9 @@ body {
 }
 
 .bottom-header {
-	box-shadow: 0 0 5px rgba(142,142,142,0.5);
-	-webkit-box-shadow: 0 0 5px rgba(142,142,142,0.5);
-    -moz-box-shadow: 0 0 5px rgba(142,142,142,0.5);
+	box-shadow: 0 0 10px rgba(142,142,142,0.5);
+	-webkit-box-shadow: 0 0 10px rgba(142,142,142,0.5);
+    -moz-box-shadow: 0 0 10px rgba(142,142,142,0.5);
 	height: 131px;
 }
 
@@ -164,8 +196,8 @@ body {
 	font-weight:bold;
 	font-size: 13px;
 	padding: 1px 0;
-	color: #222533;
-	text-decoration: none;
+	color: #222533 !important;
+	text-decoration: none !important;
 }
 
 .header-cart {
@@ -177,6 +209,8 @@ body {
 	padding: 17px 19px;
 	background-color: #396596;
 	border-radius: 4px;
+	-moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
 	cursor: pointer;
 }
 
@@ -189,12 +223,14 @@ body {
 	background-color: #83b33f;
     position: relative;
     border-radius: 10px;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
     padding: 4px 7px;
     color: white;
     font-size: 10px;
     float: left;
     top: -10px;
-    right: -45px;
+    right: -46px;
 }
 
 .header-nav {
@@ -211,40 +247,135 @@ body {
 	border: 1px solid #83b33f;
 	background: #fff;
 	height: 25px;
+	width: 159px;
 	line-height: 10px;
 	border-radius: 10px;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
 	color: #2c3e50;
 	font-size: 10pt;
-	padding: 0 14px;
 	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: bold;
 	cursor: pointer;
 	float: left;
 }
 
+.header-nav-content {
+	float: left;
+	width: 1010px;
+	height: 48px;
+	margin-left: 1px;
+}
+
 .header-nav-list {
 	list-style: none;
 	padding: 0;
+	margin: 0;
 	float: left;
-	width: 1008px;
-	display:table; 
-	table-layout:fixed;
+	width: 100%;
+	height: 100%;
+	display:table;
 }
 
 .header-nav-item {
+	line-height: 48px;
 	display:table-cell;
+	text-align: center;
+	cursor: pointer;
 }
 
 .arrow-down {
-	top: 5px;
-    left: 5px;
-	height: 10px;
-	width: 15px;
-	float:right;
-	position:relative;
-	background: url('../img/arrow_down.png') no-repeat;
+	height: 8px;
 }
 
+
+/* SUB MENU NAVIGATION */
+.header-subnav{
+	font-family: "LatoRegular", sans-serif;
+	font-size: 11pt;
+	font-weight: normal;
+	color: #aebcc5;
+	position: absolute;
+	width: 1170px;
+	z-index: 1;
+}
+
+.header-subnav-content {
+	position: relative;
+	top: 48px;
+}
+
+.header-subnav-menu{
+	float:left;
+	position: absolute;
+	background-color: white;
+	border-top: 3px #DFFFB3 groove;
+	box-shadow: 0 0 10px rgba(142,142,142,0.5);
+    -webkit-box-shadow: 0 0 10px rgba(142,142,142,0.5);
+    -moz-box-shadow: 0 0 10px rgba(142,142,142,0.5);
+}
+
+.header-subnav-col {
+	float:left;
+	width: 390px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header-subnav-item {
+	height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+	cursor: pointer;
+}
+
+.header-subnav-item:hover {
+	background-color: #f5f7f8;
+	color: #2c3e50;
+}
+/* CONTENT */
+
+#main {
+	margin: 0 auto;
+	width: 1170px;
+}
+
+.top-main {
+	margin-top: 30px;
+	height: 600px;
+}
+
+.main-slider {
+	width: 770px;
+	height: 600px;
+	float: left;
+}
+
+.main-rside{
+	float: left;
+	margin-left: 30px;
+	width: 370px;
+	height: 100%;
+}
+
+.main-rside-item{
+	margin-top: 36px;
+}
+
+.main-rside-block {
+	width: 370px;
+	height: 220px;
+	background-color: #ccc;
+}
+
+
+.next-button {
+	margin-top: 12px;
+	height: 50px;
+}
+
+/* FOOTER */
 #footer {
 	background-color: #222533;
 }

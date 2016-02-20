@@ -6,7 +6,10 @@
 		<link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,400italic,700italic&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="DESIGN/css/all.css"/>
+		<link rel="stylesheet" type="text/css" href="DESIGN/css/jquery.bxslider.css"/>
 		<script type="text/javascript" src="DESIGN/js/jquery/jquery-min.js"></script>
+		<script type="text/javascript" src="DESIGN/js/jquery/jquery.bxslider.min.js"></script>
+		<script type="text/javascript" src="DESIGN/js/scripts.js"></script>
 	</head>
 	<body>
 		<div id="wrapper">
@@ -60,26 +63,129 @@
 							</div>
 							<div class="header-cart">
 								<div class="incart-count-circle">5</div>
-								<button class="button cart-button">
+								<button class="button cart-button" type="button">
 									<img src="DESIGN/img/cart.png" alt="cart" class="cart-button-img"/>    
 								</button>
 							</div>
 						</div>
 						<div class="header-nav" >
-							<button class="create-case-button">СОЗДАТЬ СВОЙ ЧЕХОЛ</button>
-							<ul class="header-nav-list">
-								<li class="header-nav-item"><span style="float:left;">ЧЕХЛЫ И АКСЕСУАРЫ</span> <span class="arrow-down"></span></li>
-								<li class="header-nav-item"><span style="float:left;">ГАДЖЕТЫ И ТЕХНИКА</span> <span class="arrow-down"></span></li>
-								<li class="header-nav-item"><span style="float:left;">МУЛЬТИМЕДИА/ФОТО/ВИДЕО</span> <span class="arrow-down"></span></li>
-								<li class="header-nav-item"><span style="float:left;">АКСЕСУАРЫ ДЛЯ ТЕЛЕФОНОВ</span> <span class="arrow-down"></span></li>
-								<li class="header-nav-item"><span style="float:left;">АКСЕСУАРЫ ДЛЯ ПЛАНШЕТОВ</span> <span class="arrow-down"></span></li>
-							</ul>
+							<button class="create-case-button" type="button">СОЗДАТЬ СВОЙ ЧЕХОЛ</button>
+							<div class="header-nav-content">
+								<ul class="header-nav-list">
+									<li class="header-nav-item">
+										ЧЕХЛЫ И АКСЕСУАРЫ
+										<img class="arrow-down" src="DESIGN/img/arrow_down.png"/>
+									</li>
+									<li class="header-nav-item">
+										ГАДЖЕТЫ И ТЕХНИКА
+										<img class="arrow-down" src="DESIGN/img/arrow_down.png"/>
+									</li>
+									<li class="header-nav-item">
+										МУЛЬТИМЕДИА/ФОТО/ВИДЕО
+										<img class="arrow-down" src="DESIGN/img/arrow_down.png"/>
+									</li>
+									<li class="header-nav-item">
+										АКСЕСУАРЫ ДЛЯ ТЕЛЕФОНОВ
+										<img class="arrow-down" src="DESIGN/img/arrow_down.png"/>
+									</li>
+									<li class="header-nav-item">
+										АКСЕСУАРЫ ДЛЯ ПЛАНШЕТОВ
+										<img class="arrow-down" src="DESIGN/img/arrow_down.png"/>
+									</li>
+								</ul>
+							</div>
+							<div class="header-subnav">
+								<div class="header-subnav-content">
+									<div class="header-subnav-menu" id="hs-menu-1">
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">Чехлы для IPhone 4 / 4S</li>
+											<li class="header-subnav-item">Чехлы перечехлы</li>
+											<li class="header-subnav-item">Чехлы перечехлы</li>
+											<li class="header-subnav-item">Чехлы для IPhone 4 / 4S</li>
+										</ul>
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">Чехлы для IPhone 4 / 4S</li>
+											<li class="header-subnav-item">Чехлы перечехлы</li>
+											<li class="header-subnav-item">Чехлы перечехлы</li>
+										</ul>
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">Держатели, автомобильные держатели</li>
+											<li class="header-subnav-item">Чехлы перечехлы</li>
+											<li class="header-subnav-item">Чехлы перечехлы</li>
+										</ul>
+									</div>
+									<div class="header-subnav-menu" id="hs-menu-2">
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">Чехлы для IPhone 4 / 4S</li>
+											<li class="header-subnav-item">Чехлы перечехлы</li>
+											<li class="header-subnav-item">Чехлы для IPhone 4 / 4S</li>
+											<li class="header-subnav-item">Чехлы для IPhone 4 / 4S</li>
+											<li class="header-subnav-item">Чехлы для IPhone 4 / 4S</li>
+											<li class="header-subnav-item">Чехлы перечехлы</li>
+										</ul>
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">Чехлы для IPhone 4 / 4S</li>
+											<li class="header-subnav-item">Чехлы перечехлы</li>
+											<li class="header-subnav-item">Чехлы перечехлы</li>
+											<li class="header-subnav-item">Чехлы перечехлы</li>
+											<li class="header-subnav-item">Чехлы перечехлы</li>
+										</ul>
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">Держатели, автомобильные держатели</li>
+											<li class="header-subnav-item">Чехлы перечехлы</li>
+											<li class="header-subnav-item">Держатели, автомобильные держатели</li>
+											<li class="header-subnav-item">Чехлы перечехлы</li>
+											<li class="header-subnav-item">Чехлы перечехлы</li>
+										</ul>
+									</div>
+									<div class="header-subnav-menu" id="hs-menu-3">
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">Чехлы для IPhone 4 / 4S</li>
+											<li class="header-subnav-item">Чехлы перечехлы</li>
+											<li class="header-subnav-item">Чехлы перечехлы</li>
+											<li class="header-subnav-item">Чехлы для IPhone 4 / 4S</li>
+										</ul>
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">Чехлы для IPhone 4 / 4S</li>
+											<li class="header-subnav-item">Чехлы перечехлы</li>
+											<li class="header-subnav-item">Чехлы перечехлы</li>
+											<li class="header-subnav-item">Чехлы перечехлы</li>
+										</ul>
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">Держатели, автомобильные держатели</li>
+											<li class="header-subnav-item">Держатели, автомобильные держатели</li>
+											<li class="header-subnav-item">Чехлы перечехлы</li>
+											<li class="header-subnav-item">Чехлы перечехлы</li>
+										</ul>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div id="content">
-				<div id="tmp" style="margin: 0 auto; height: 400px">
+			<div id="main">
+				<div class="top-main">
+					<div class="main-slider">
+						<ul class="bxslider">
+						  <li><img src="DESIGN/img/slider_1.png" /></li>
+						  <li><img src="DESIGN/img/slider_1.png" /></li>
+						  <li><img src="DESIGN/img/slider_1.png" /></li>
+						  <li><img src="DESIGN/img/slider_1.png" /></li>
+						</ul>
+					</div>
+					<div class="main-rside">
+						<div class="main-rside-item no-margin">
+							<div class="main-rside-block">
+							</div>
+							<button class="button next-button" type="button">Далее ></button>
+						</div>
+						<div class="main-rside-item">
+							<div class="main-rside-block">
+							</div>
+							<button class="button next-button" type="button">Далее ></button>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div id="footer">
