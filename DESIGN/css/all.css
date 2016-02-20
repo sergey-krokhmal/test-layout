@@ -356,6 +356,40 @@ body {
 	float: left;
 }
 
+.main-slider .bx-wrapper .bx-pager {
+	bottom: 54px;
+    right: 70px;
+	padding: 0;
+}
+
+.main-slider .bx-wrapper .bx-pager.bx-default-pager a {
+	background: white;
+	text-indent: -9999px;
+	display: block;
+	width: 16px;
+	height: 16px;
+	margin: 0 6px;
+	outline: 0;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	box-sizing: border-box;
+}
+
+.main-slider .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.main-slider .bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #ccc;
+    margin-top: 2px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid white;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    top: 2px;
+    position: relative;
+}
+
 .main-rside{
 	float: left;
 	margin-left: 30px;
@@ -415,6 +449,7 @@ body {
 .arrow-button{
 	width: 30px;
 	height: 30px;
+	float: left;
 	border-radius: 3px;
 	-moz-border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -428,7 +463,25 @@ body {
 }
 
 .latest-goods-nav{
-	
+	float: right;
+}
+
+.latest-goods-slider {
+	width: 100%;
+	height: 640px;
+	margin: 47px 0 0 0;
+	padding: 0;
+}
+
+.latest-goods-item {
+	margin-right: 30px;
+	float: left;
+	width: 270px;
+	height: 560px;
+	border: 1px solid #e6e6e6;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
 }
 
 /* FOOTER */
