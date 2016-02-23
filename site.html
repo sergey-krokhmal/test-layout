@@ -41,11 +41,15 @@
 				<div class="bottom-header">
 					<div class="bottom-header-container">
 						<div class="header-tools">
-							<div class="main-logo">
-								<img src="DESIGN/img/logo.png" alt="logo" class="main-logo-img"/>
-							</div>
-							<div class="main-title">
-								гаджеты<br/>и аксесуары
+							<div class="main-site-logo">
+								<div class="main-logo">
+									<a href="">
+										<img src="DESIGN/img/logo.png" alt="YaMobail" class="main-logo-img"/>
+									</a>
+								</div>
+								<div class="main-title">
+									гаджеты<br/>и аксесуары
+								</div>
 							</div>
 							<div class="search-line">
 								<input class="search-input" type="text" placeholder="Поиск..."/>
@@ -64,7 +68,9 @@
 							<div class="header-cart">
 								<div class="incart-count-circle">5</div>
 								<button class="button cart-button" type="button">
-									<img src="DESIGN/img/cart.png" alt="cart" class="cart-button-img"/>    
+									<a href="">
+										<img src="DESIGN/img/cart.png" alt="cart" class="cart-button-img"/>
+									</a>
 								</button>
 							</div>
 						</div>
@@ -72,25 +78,35 @@
 							<button class="create-case-button" type="button">СОЗДАТЬ СВОЙ ЧЕХОЛ</button>
 							<div class="header-nav-content">
 								<ul class="header-nav-list">
-									<li class="header-nav-item">
-										ЧЕХЛЫ И АКСЕСУАРЫ
-										<img class="arrow-down" src="DESIGN/img/arrow_down.png"/>
+									<li class="header-nav-item" id="hn-item-1">
+										<a href="#" onclick="toggleMenu('hn-item-1','hs-menu-1','header-subnav-menu', '')">
+											ЧЕХЛЫ И АКСЕСУАРЫ
+											<img class="arrow-down" src="DESIGN/img/arrow_down.png"/>
+										</a>
 									</li>
-									<li class="header-nav-item">
-										ГАДЖЕТЫ И ТЕХНИКА
-										<img class="arrow-down" src="DESIGN/img/arrow_down.png"/>
+									<li class="header-nav-item" id="hn-item-2">
+										<a href="#" onclick="toggleMenu('hn-item-2','hs-menu-2','header-subnav-menu', '')">
+											ГАДЖЕТЫ И ТЕХНИКА
+											<img class="arrow-down" src="DESIGN/img/arrow_down.png"/>
+										</a>
 									</li>
-									<li class="header-nav-item">
-										МУЛЬТИМЕДИА/ФОТО/ВИДЕО
-										<img class="arrow-down" src="DESIGN/img/arrow_down.png"/>
+									<li class="header-nav-item" id="hn-item-3">
+										<a href="#" onclick="toggleMenu('hn-item-3','hs-menu-3','header-subnav-menu', '')">
+											МУЛЬТИМЕДИА/ФОТО/ВИДЕО
+											<img class="arrow-down" src="DESIGN/img/arrow_down.png"/>
+										</a>
 									</li>
-									<li class="header-nav-item">
-										АКСЕСУАРЫ ДЛЯ ТЕЛЕФОНОВ
-										<img class="arrow-down" src="DESIGN/img/arrow_down.png"/>
+									<li class="header-nav-item" id="hn-item-4">
+										<a href="#" onclick="toggleMenu('hn-item-4','hs-menu-4','header-subnav-menu', '')">
+											АКСЕСУАРЫ ДЛЯ ТЕЛЕФОНОВ
+											<img class="arrow-down" src="DESIGN/img/arrow_down.png"/>
+										</a>
 									</li>
-									<li class="header-nav-item">
-										АКСЕСУАРЫ ДЛЯ ПЛАНШЕТОВ
-										<img class="arrow-down" src="DESIGN/img/arrow_down.png"/>
+									<li class="header-nav-item" id="hn-item-5">
+										<a href="#" onclick="toggleMenu('hn-item-5','hs-menu-5','header-subnav-menu', '')">
+											АКСЕСУАРЫ ДЛЯ ПЛАНШЕТОВ
+											<img class="arrow-down" src="DESIGN/img/arrow_down.png"/>
+										</a>
 									</li>
 								</ul>
 							</div>
@@ -98,64 +114,510 @@
 								<div class="header-subnav-content">
 									<div class="header-subnav-menu" id="hs-menu-1">
 										<ul class="header-subnav-col">
-											<li class="header-subnav-item">Чехлы для IPhone 4 / 4S</li>
-											<li class="header-subnav-item">Чехлы перечехлы</li>
-											<li class="header-subnav-item">Чехлы перечехлы</li>
-											<li class="header-subnav-item">Чехлы для IPhone 4 / 4S</li>
+											<li class="header-subnav-item">
+												Чехлы для IPhone 4 / 4S
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для IPhone 5C
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для IPhone 5 / 5S
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для IPhone 6 / 6S
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для IPhone 6 / 6S Plus
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для IPad (Всех моделей)
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Сумки для MacBook
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Перчатки для сенсорных экранов
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Подставки, докстанции
+												<span class="light-arrow">></span>
+											</li>
 										</ul>
 										<ul class="header-subnav-col">
-											<li class="header-subnav-item">Чехлы для IPhone 4 / 4S</li>
-											<li class="header-subnav-item">Чехлы перечехлы</li>
-											<li class="header-subnav-item">Чехлы перечехлы</li>
+											<li class="header-subnav-item">
+												Защитные пленки
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Защитные стекла
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Кабели, переходники и разветвители
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Аксессуары для Apple iPod
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Аксессуары для Apple Watch
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Аксессуары для MacBook
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Bluetooth гарнитуры
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Стилусы
+												<span class="light-arrow">></span>
+											</li>
 										</ul>
 										<ul class="header-subnav-col">
-											<li class="header-subnav-item">Держатели, автомобильные держатели</li>
-											<li class="header-subnav-item">Чехлы перечехлы</li>
-											<li class="header-subnav-item">Чехлы перечехлы</li>
+											<li class="header-subnav-item">
+												Держатели, автомобильные держатели
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Внешние аккумуляторы (power bank)
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Зарядные устройства
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Штативы для селфи (моноподы)
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Автомобильные FM-трансмиттеры
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для MacBook
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Объективы для смартфонов
+												<span class="light-arrow">></span>
+											</li>
 										</ul>
 									</div>
 									<div class="header-subnav-menu" id="hs-menu-2">
 										<ul class="header-subnav-col">
-											<li class="header-subnav-item">Чехлы для IPhone 4 / 4S</li>
-											<li class="header-subnav-item">Чехлы перечехлы</li>
-											<li class="header-subnav-item">Чехлы для IPhone 4 / 4S</li>
-											<li class="header-subnav-item">Чехлы для IPhone 4 / 4S</li>
-											<li class="header-subnav-item">Чехлы для IPhone 4 / 4S</li>
-											<li class="header-subnav-item">Чехлы перечехлы</li>
+											<li class="header-subnav-item">
+												Графические планшеты
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Калибраторы мониторов X-Rite
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Сетевые хранилища Synology
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Здоровье и Фитнес 
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Жесткие диски
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Цифровые ручки
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Очки Google Glass
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												3D очки
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Беспроводные клавиатуры
+												<span class="light-arrow">></span>
+											</li>
 										</ul>
 										<ul class="header-subnav-col">
-											<li class="header-subnav-item">Чехлы для IPhone 4 / 4S</li>
-											<li class="header-subnav-item">Чехлы перечехлы</li>
-											<li class="header-subnav-item">Чехлы перечехлы</li>
-											<li class="header-subnav-item">Чехлы перечехлы</li>
-											<li class="header-subnav-item">Чехлы перечехлы</li>
+											<li class="header-subnav-item">
+												Все для геймера
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Умные часы
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Радиоуправляемые коллекционные игрушки
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Умный дом (гаджеты)
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Сетевое оборудование
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Товары для спорта
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Электротранспорт
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Wi-Fi роутеры
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Средства ухода
+												<span class="light-arrow">></span>
+											</li>
 										</ul>
 										<ul class="header-subnav-col">
-											<li class="header-subnav-item">Держатели, автомобильные держатели</li>
-											<li class="header-subnav-item">Чехлы перечехлы</li>
-											<li class="header-subnav-item">Держатели, автомобильные держатели</li>
-											<li class="header-subnav-item">Чехлы перечехлы</li>
-											<li class="header-subnav-item">Чехлы перечехлы</li>
+											<li class="header-subnav-item">
+												Защищенные телефоны Sonim
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Игровые приставки
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Игровая консоль
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Устройства ввода информации/Коврики
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Флешки. Харды. Диски
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Системы охлаждения
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												USB HUB
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Проекторы
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Сетевые фильтры
+												<span class="light-arrow">></span>
+											</li>
 										</ul>
 									</div>
 									<div class="header-subnav-menu" id="hs-menu-3">
 										<ul class="header-subnav-col">
-											<li class="header-subnav-item">Чехлы для IPhone 4 / 4S</li>
-											<li class="header-subnav-item">Чехлы перечехлы</li>
-											<li class="header-subnav-item">Чехлы перечехлы</li>
-											<li class="header-subnav-item">Чехлы для IPhone 4 / 4S</li>
+											<li class="header-subnav-item">
+												Наушники
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Проигрыватели виниловых дисков
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Акустические системы, колонки
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Медиаплееры
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Домашний кинотеатр
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Лупы Levenhuk
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Музыкальные аксессуары
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Телескопы и оптические трубы (OTA)
+												<span class="light-arrow">></span>
+											</li>
 										</ul>
 										<ul class="header-subnav-col">
-											<li class="header-subnav-item">Чехлы для IPhone 4 / 4S</li>
-											<li class="header-subnav-item">Чехлы перечехлы</li>
-											<li class="header-subnav-item">Чехлы перечехлы</li>
-											<li class="header-subnav-item">Чехлы перечехлы</li>
+											<li class="header-subnav-item">
+												Веб-камеры
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Видеоняни и радионяни
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												HD Медиаплееры
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Проигрыватели Blu-Ray, DVD, CD
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												MP3 плееры
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Аксессуары Levenhuk
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Фотоаксессуары
+												<span class="light-arrow">></span>
+											</li>
 										</ul>
 										<ul class="header-subnav-col">
-											<li class="header-subnav-item">Держатели, автомобильные держатели</li>
-											<li class="header-subnav-item">Держатели, автомобильные держатели</li>
-											<li class="header-subnav-item">Чехлы перечехлы</li>
-											<li class="header-subnav-item">Чехлы перечехлы</li>
+											<li class="header-subnav-item">
+												Телескопы Levenhuk
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Бинокли Levenhuk
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Зрительные трубы Levenhuk
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Монокуляры Levenhuk
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Микроскопы Levenhuk
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Аксессуары Levenhuk Ra
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Цифровые камеры Levenhuk для телескопов и микроскопов
+												<span class="light-arrow">></span>
+											</li>
+										</ul>
+									</div>
+									<div class="header-subnav-menu" id="hs-menu-4">
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">
+												Защитные пленки для смартфонов
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для Alcatel
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для Explay
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для HighScreen
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для Keneksi
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для Megafon Login SP-A1
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для Nokia
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для Sony
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для ZTE
+												<span class="light-arrow">></span>
+											</li>
+										</ul>
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">
+												Защитные стекла для смарфонов
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для ARK
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для Fly
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для HTC
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для Lenovo
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для Micromax
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для Philips
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для Vertu
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для смартфонов Samsung
+												<span class="light-arrow">></span>
+											</li>
+										</ul>
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">
+												Чехлы для Acer
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для Asus
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для Google Nexus
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для Huawei
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для LG
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для MTS
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для Prestigio
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для Xiaomi
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы универсальные для смартфонов
+												<span class="light-arrow">></span>
+											</li>
+										</ul>
+									</div>
+									<div class="header-subnav-menu" id="hs-menu-5">
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">
+												Док-станции и контроллеры
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Универсальные чехлы для планшетов
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для планшетов Aser
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для планшетов Huawei
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для планшетов Nokia
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для планшетов Sony
+												<span class="light-arrow">></span>
+											</li>
+										</ul>
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">
+												Защитные стекла для планшетов
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для Microsoft Surface
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для планшетов Asus
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для планшетов Lenovo
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для планшетов Prestigio
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Аксессуары для Samsung
+												<span class="light-arrow">></span>
+											</li>
+										</ul>
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">
+												Защитные стекла для планшетов
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для планшетов IconBIT
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для планшетов Fly
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для планшетов LG
+												<span class="light-arrow">></span>
+											</li>
+											<li class="header-subnav-item">
+												Чехлы для планшетов Samsung
+												<span class="light-arrow">></span>
+											</li>
 										</ul>
 									</div>
 								</div>
@@ -166,51 +628,686 @@
 			</div>
 			<div id="main">
 				<div class="top-main">
-					<div class="main-slider">
-						<ul class="bxslider">
-						  <li><img src="DESIGN/img/slider_1.png" /></li>
-						  <li><img src="DESIGN/img/slider_1.png" /></li>
-						  <li><img src="DESIGN/img/slider_1.png" /></li>
-						  <li><img src="DESIGN/img/slider_1.png" /></li>
-						</ul>
-					</div>
-					<div class="main-rside">
-						<div class="main-rside-item no-margin">
-							<div class="main-rside-block">
-							</div>
-							<button class="button next-button" type="button">Далее ></button>
+					<div class="top-main-info">
+						<div class="main-slider">
+							<ul class="bxslider">
+							  <li><img src="DESIGN/img/slider_1.png" /></li>
+							  <li><img src="DESIGN/img/slider_1.png" /></li>
+							  <li><img src="DESIGN/img/slider_1.png" /></li>
+							  <li><img src="DESIGN/img/slider_1.png" /></li>
+							</ul>
 						</div>
-						<div class="main-rside-item">
-							<div class="main-rside-block">
+						<div class="main-rside">
+							<div class="main-rside-item no-margin">
+								<div class="main-rside-block">
+								</div>
+								<button class="button next-button" type="button">Далее ></button>
 							</div>
-							<button class="button next-button" type="button">Далее ></button>
+							<div class="main-rside-item">
+								<div class="main-rside-block">
+								</div>
+								<button class="button next-button" type="button">Далее ></button>
+							</div>
+						</div>
+					</div>
+					<div class="latest-goods">
+						<div class="main-goods-head">
+							<div class="green-square" style="margin-top: 3px;"></div>
+							<h2 class="main-selection-title">НОВИНКИ</h2>
+							<div class="main-goods-nav">
+								<button class="button arrow-button" id="latest-goods-prev" type="button">
+									<span class="light-arrow"><</span>
+								</button>
+								<button class="button arrow-button active" id="latest-goods-next" type="button" style="margin-left: 10px">
+									<span class="light-arrow">></span>
+								</button>
+							</div>
+						</div>
+						<div class="main-goods-slider latest-goods-slider">
+							<ul class="bxslider">
+								<li class="main-goods-item">
+									<div class="goods-item-top-info">
+										<div class="goods-item-presence">2-3 дня</div>
+										<div class="goods-item-articul">Арт. 11111</div>
+									</div>
+									<div class="goods-item-photo"></div>
+									<div class="goods-item-bottom-info">
+										<div class="good-item-name">
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+										</div>
+										<div class="good-item-price">589.00<span class="rub-sign">a</span></div>
+									</div>
+									<div class="goods-item-tools">
+										<button class="button goods-item-tools-button button-incard">
+											<div class="button-label">
+												<img src="DESIGN/img/cart.png" class="button-img"/>
+												<span class="button-label-text">В корзину</span>
+											</div>
+										</button>
+										<a href="">
+											<button class="button goods-item-tools-button button-next">
+												<div class="button-label">
+													<img src="DESIGN/img/detail.png" class="button-img"/>
+													<span class="button-label-text">Далее</span>
+												</div>
+											</button>
+										</a>
+									</div>
+								</li>
+								<li class="main-goods-item">
+									<div class="goods-item-top-info">
+										<div class="goods-item-presence">Есть в наличии</div>
+										<div class="goods-item-articul">Арт. 11111</div>
+									</div>
+									<div class="goods-item-photo"></div>
+									<div class="goods-item-bottom-info">
+										<div class="good-item-name">
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+										</div>
+										<div class="good-item-price">589.00<span class="rub-sign">a</span></div>
+									</div>
+									<div class="goods-item-tools">
+										<button class="button goods-item-tools-button button-incard">
+											<div class="button-label">
+												<img src="DESIGN/img/cart.png" class="button-img"/>
+												<span class="button-label-text">В корзину</span>
+											</div>
+										</button>
+										<a href="">
+											<button class="button goods-item-tools-button button-next">
+												<div class="button-label">
+													<img src="DESIGN/img/detail.png" class="button-img"/>
+													<span class="button-label-text">Далее</span>
+												</div>
+											</button>
+										</a>
+									</div>
+								</li>
+								<li class="main-goods-item">
+									<div class="goods-item-top-info">
+										<div class="goods-item-presence">Предзаказ</div>
+										<div class="goods-item-articul">Арт. 11111</div>
+									</div>
+									<div class="goods-item-photo"></div>
+									<div class="goods-item-bottom-info">
+										<div class="good-item-name">
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+										</div>
+										<div class="good-item-price">589.00<span class="rub-sign">a</span></div>
+									</div>
+									<div class="goods-item-tools">
+										<button class="button goods-item-tools-button button-incard">
+											<div class="button-label">
+												<img src="DESIGN/img/cart.png" class="button-img"/>
+												<span class="button-label-text">В корзину</span>
+											</div>
+										</button>
+										<a href="">
+											<button class="button goods-item-tools-button button-next">
+												<div class="button-label">
+													<img src="DESIGN/img/detail.png" class="button-img"/>
+													<span class="button-label-text">Далее</span>
+												</div>
+											</button>
+										</a>
+									</div>
+								</li>
+								<li class="main-goods-item">
+									<div class="goods-item-top-info">
+										<div class="goods-item-presence">Есть в наличии</div>
+										<div class="goods-item-articul">Арт. 11111</div>
+									</div>
+									<div class="goods-item-photo"></div>
+									<div class="goods-item-bottom-info">
+										<div class="good-item-name">
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+										</div>
+										<div class="good-item-price">589.00<span class="rub-sign">a</span></div>
+									</div>
+									<div class="goods-item-tools">
+										<button class="button goods-item-tools-button button-incard">
+											<div class="button-label">
+												<img src="DESIGN/img/cart.png" class="button-img"/>
+												<span class="button-label-text">В корзину</span>
+											</div>
+										</button>
+										<a href="">
+											<button class="button goods-item-tools-button button-next">
+												<div class="button-label">
+													<img src="DESIGN/img/detail.png" class="button-img"/>
+													<span class="button-label-text">Далее</span>
+												</div>
+											</button>
+										</a>
+									</div>
+								</li>
+								<li class="main-goods-item">
+									<div class="goods-item-top-info">
+										<div class="goods-item-presence">2-3 дня</div>
+										<div class="goods-item-articul">Арт. 11111</div>
+									</div>
+									<div class="goods-item-photo"></div>
+									<div class="goods-item-bottom-info">
+										<div class="good-item-name">
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+										</div>
+										<div class="good-item-price">589.00<span class="rub-sign">a</span></div>
+									</div>
+									<div class="goods-item-tools">
+										<button class="button goods-item-tools-button button-incard">
+											<div class="button-label">
+												<img src="DESIGN/img/cart.png" class="button-img"/>
+												<span class="button-label-text">В корзину</span>
+											</div>
+										</button>
+										<a href="">
+											<button class="button goods-item-tools-button button-next">
+												<div class="button-label">
+													<img src="DESIGN/img/detail.png" class="button-img"/>
+													<span class="button-label-text">Далее</span>
+												</div>
+											</button>
+										</a>
+									</div>
+								</li>
+								<li class="main-goods-item">
+									<div class="goods-item-top-info">
+										<div class="goods-item-presence">2-3 дня</div>
+										<div class="goods-item-articul">Арт. 11111</div>
+									</div>
+									<div class="goods-item-photo"></div>
+									<div class="goods-item-bottom-info">
+										<div class="good-item-name">
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+										</div>
+										<div class="good-item-price">589.00<span class="rub-sign">a</span></div>
+									</div>
+									<div class="goods-item-tools">
+										<button class="button goods-item-tools-button button-incard">
+											<div class="button-label">
+												<img src="DESIGN/img/cart.png" class="button-img"/>
+												<span class="button-label-text">В корзину</span>
+											</div>
+										</button>
+										<a href="">
+											<button class="button goods-item-tools-button button-next">
+												<div class="button-label">
+													<img src="DESIGN/img/detail.png" class="button-img"/>
+													<span class="button-label-text">Далее</span>
+												</div>
+											</button>
+										</a>
+									</div>
+								</li>
+								<li class="main-goods-item">
+									<div class="goods-item-top-info">
+										<div class="goods-item-presence">2-3 дня</div>
+										<div class="goods-item-articul">Арт. 11111</div>
+									</div>
+									<div class="goods-item-photo"></div>
+									<div class="goods-item-bottom-info">
+										<div class="good-item-name">
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+										</div>
+										<div class="good-item-price">589.00<span class="rub-sign">a</span></div>
+									</div>
+									<div class="goods-item-tools">
+										<button class="button goods-item-tools-button button-incard">
+											<div class="button-label">
+												<img src="DESIGN/img/cart.png" class="button-img"/>
+												<span class="button-label-text">В корзину</span>
+											</div>
+										</button>
+										<a href="">
+											<button class="button goods-item-tools-button button-next">
+												<div class="button-label">
+													<img src="DESIGN/img/detail.png" class="button-img"/>
+													<span class="button-label-text">Далее</span>
+												</div>
+											</button>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="recommended-goods">
+						<div class="main-goods-head">
+							<div class="green-square" style="margin-top: 3px;"></div>
+							<h2 class="main-selection-title">РЕКОМЕНДУЕМЫЕ</h2>
+							<div class="main-goods-nav">
+								<button class="button arrow-button" id="recommended-goods-prev" type="button">
+									<span class="light-arrow"><</span>
+								</button>
+								<button class="button arrow-button active" id="recommended-goods-next" type="button" style="margin-left: 10px">
+									<span class="light-arrow">></span>
+								</button>
+							</div>
+						</div>
+						<div class="main-goods-slider recommended-goods-slider">
+							<ul class="bxslider">
+								<li class="main-goods-item">
+									<div class="goods-item-top-info">
+										<div class="goods-item-presence">2-3 дня</div>
+										<div class="goods-item-articul">Арт. 11111</div>
+									</div>
+									<div class="goods-item-photo"></div>
+									<div class="goods-item-bottom-info">
+										<div class="good-item-name">
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+										</div>
+										<div class="good-item-price">589.00<span class="rub-sign">a</span></div>
+									</div>
+									<div class="goods-item-tools">
+										<button class="button goods-item-tools-button button-incard">
+											<div class="button-label">
+												<img src="DESIGN/img/cart.png" class="button-img"/>
+												<span class="button-label-text">В корзину</span>
+											</div>
+										</button>
+										<a href="">
+											<button class="button goods-item-tools-button button-next">
+												<div class="button-label">
+													<img src="DESIGN/img/detail.png" class="button-img"/>
+													<span class="button-label-text">Далее</span>
+												</div>
+											</button>
+										</a>
+									</div>
+								</li>
+								<li class="main-goods-item">
+									<div class="goods-item-top-info">
+										<div class="goods-item-presence">Есть в наличии</div>
+										<div class="goods-item-articul">Арт. 11111</div>
+									</div>
+									<div class="goods-item-photo"></div>
+									<div class="goods-item-bottom-info">
+										<div class="good-item-name">
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+										</div>
+										<div class="good-item-price">589.00<span class="rub-sign">a</span></div>
+									</div>
+									<div class="goods-item-tools">
+										<button class="button goods-item-tools-button button-incard">
+											<div class="button-label">
+												<img src="DESIGN/img/cart.png" class="button-img"/>
+												<span class="button-label-text">В корзину</span>
+											</div>
+										</button>
+										<a href="">
+											<button class="button goods-item-tools-button button-next">
+												<div class="button-label">
+													<img src="DESIGN/img/detail.png" class="button-img"/>
+													<span class="button-label-text">Далее</span>
+												</div>
+											</button>
+										</a>
+									</div>
+								</li>
+								<li class="main-goods-item">
+									<div class="goods-item-top-info">
+										<div class="goods-item-presence">Предзаказ</div>
+										<div class="goods-item-articul">Арт. 11111</div>
+									</div>
+									<div class="goods-item-photo"></div>
+									<div class="goods-item-bottom-info">
+										<div class="good-item-name">
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+										</div>
+										<div class="good-item-price">589.00<span class="rub-sign">a</span></div>
+									</div>
+									<div class="goods-item-tools">
+										<button class="button goods-item-tools-button button-incard">
+											<div class="button-label">
+												<img src="DESIGN/img/cart.png" class="button-img"/>
+												<span class="button-label-text">В корзину</span>
+											</div>
+										</button>
+										<a href="">
+											<button class="button goods-item-tools-button button-next">
+												<div class="button-label">
+													<img src="DESIGN/img/detail.png" class="button-img"/>
+													<span class="button-label-text">Далее</span>
+												</div>
+											</button>
+										</a>
+									</div>
+								</li>
+								<li class="main-goods-item">
+									<div class="goods-item-top-info">
+										<div class="goods-item-presence">Есть в наличии</div>
+										<div class="goods-item-articul">Арт. 11111</div>
+									</div>
+									<div class="goods-item-photo"></div>
+									<div class="goods-item-bottom-info">
+										<div class="good-item-name">
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+										</div>
+										<div class="good-item-price">589.00<span class="rub-sign">a</span></div>
+									</div>
+									<div class="goods-item-tools">
+										<button class="button goods-item-tools-button button-incard">
+											<div class="button-label">
+												<img src="DESIGN/img/cart.png" class="button-img"/>
+												<span class="button-label-text">В корзину</span>
+											</div>
+										</button>
+										<a href="">
+											<button class="button goods-item-tools-button button-next">
+												<div class="button-label">
+													<img src="DESIGN/img/detail.png" class="button-img"/>
+													<span class="button-label-text">Далее</span>
+												</div>
+											</button>
+										</a>
+									</div>
+								</li>
+								<li class="main-goods-item">
+									<div class="goods-item-top-info">
+										<div class="goods-item-presence">2-3 дня</div>
+										<div class="goods-item-articul">Арт. 11111</div>
+									</div>
+									<div class="goods-item-photo"></div>
+									<div class="goods-item-bottom-info">
+										<div class="good-item-name">
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+										</div>
+										<div class="good-item-price">589.00<span class="rub-sign">a</span></div>
+									</div>
+									<div class="goods-item-tools">
+										<button class="button goods-item-tools-button button-incard">
+											<div class="button-label">
+												<img src="DESIGN/img/cart.png" class="button-img"/>
+												<span class="button-label-text">В корзину</span>
+											</div>
+										</button>
+										<a href="">
+											<button class="button goods-item-tools-button button-next">
+												<div class="button-label">
+													<img src="DESIGN/img/detail.png" class="button-img"/>
+													<span class="button-label-text">Далее</span>
+												</div>
+											</button>
+										</a>
+									</div>
+								</li>
+								<li class="main-goods-item">
+									<div class="goods-item-top-info">
+										<div class="goods-item-presence">2-3 дня</div>
+										<div class="goods-item-articul">Арт. 11111</div>
+									</div>
+									<div class="goods-item-photo"></div>
+									<div class="goods-item-bottom-info">
+										<div class="good-item-name">
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+										</div>
+										<div class="good-item-price">589.00<span class="rub-sign">a</span></div>
+									</div>
+									<div class="goods-item-tools">
+										<button class="button goods-item-tools-button button-incard">
+											<div class="button-label">
+												<img src="DESIGN/img/cart.png" class="button-img"/>
+												<span class="button-label-text">В корзину</span>
+											</div>
+										</button>
+										<a href="">
+											<button class="button goods-item-tools-button button-next">
+												<div class="button-label">
+													<img src="DESIGN/img/detail.png" class="button-img"/>
+													<span class="button-label-text">Далее</span>
+												</div>
+											</button>
+										</a>
+									</div>
+								</li>
+								<li class="main-goods-item">
+									<div class="goods-item-top-info">
+										<div class="goods-item-presence">2-3 дня</div>
+										<div class="goods-item-articul">Арт. 11111</div>
+									</div>
+									<div class="goods-item-photo"></div>
+									<div class="goods-item-bottom-info">
+										<div class="good-item-name">
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+										</div>
+										<div class="good-item-price">589.00<span class="rub-sign">a</span></div>
+									</div>
+									<div class="goods-item-tools">
+										<button class="button goods-item-tools-button button-incard">
+											<div class="button-label">
+												<img src="DESIGN/img/cart.png" class="button-img"/>
+												<span class="button-label-text">В корзину</span>
+											</div>
+										</button>
+										<a href="">
+											<button class="button goods-item-tools-button button-next">
+												<div class="button-label">
+													<img src="DESIGN/img/detail.png" class="button-img"/>
+													<span class="button-label-text">Далее</span>
+												</div>
+											</button>
+										</a>
+									</div>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
-				<div class="latest-goods">
-					<div class="latest-goods-head">
-						<div class="green-square" style="margin-top: 3px;"></div>
-						<h2 class="latest-goods-title">НОВИНКИ</h2>
-						<div class="latest-goods-nav">
-							<button class="button arrow-button" id="latest-good-prev"><span class="light-arrow"><</button>
-							<button class="button arrow-button active" id="latest-good-next" style="margin-left: 10px"><span class="light-arrow">></button>
+				<div class="main-brands">
+					<div class="main-brands-slider">
+						<button class="button arrow-button" id="main-brands-prev" type="button">
+							<span class="light-arrow"><</span>
+						</button>
+						<button class="button arrow-button active" id="main-brands-next" type="button">
+							<span class="light-arrow">></span>
+						</button>
+						<div style="margin: 0 auto; width: 1130px">
+							<ul class="bxslider">
+								<li class="main-brands-item">
+									<a href=""><img src="DESIGN/img/brands/brand1.png"></a>
+								</li>
+								<li>
+									<a href=""><img src="DESIGN/img/brands/brand2.png"></a>
+								</li>
+								<li>
+									<a href=""><img src="DESIGN/img/brands/brand3.png"></a>
+								</li>
+								<li>
+									<a href=""><img src="DESIGN/img/brands/brand4.png"></a>
+								</li>
+								<li>
+									<a href=""><img src="DESIGN/img/brands/brand5.png"></a>
+								</li>
+								<li>
+									<a href=""><img src="DESIGN/img/brands/brand6.png"></a>
+								</li>
+								<li>
+									<a href=""><img src="DESIGN/img/brands/brand5.png"></a>
+								</li>
+								<li>
+									<a href=""><img src="DESIGN/img/brands/brand4.png"></a>
+								</li>
+							</ul>
 						</div>
 					</div>
-					<div class="latest-goods-slider">
-						<ul class="bxslider">
-							<li class="latest-goods-item">1</li>
-							<li class="latest-goods-item">2</li>
-							<li class="latest-goods-item">3</li>
-							<li class="latest-goods-item">4</li>
-							<li class="latest-goods-item">5</li>
-							<li class="latest-goods-item">6</li>
-							<li class="latest-goods-item">7</li>
-						</ul>
+				</div>
+				<div class="main-news">
+					<div class="main-news-title">
+						<div class="green-square" style="margin-top: 3px;"></div>
+						<h2 class="main-selection-title">НОВОСТИ</h2>
+					</div>
+					<div class="main-news-content">
+						<div class="main-news-item">
+							<div class="main-news-item-image">
+								<div class="main-news-date">
+									<div class="main-news-date-day">21</div>
+									<div class="main-news-date-month">MAR</div>
+								</div>
+							</div>
+							<div class="main-news-info">
+								<div class="main-news-info-title">WACOM BAMBOO SPARK</div>
+								<div class="main-news-info-text">I hope that by now, in 2014, there is no need to explain why SVG is a blessing to developers who want to ensure that their graphics look sharp on all devices, especially with their huge diversity of resolutions. diversity of resolutions.</div>
+								<div class="info-next">
+									<a href="">
+										<div class="next-circle"><img src="DESIGN/img/green_arrow.png"/></div>
+										<div class="info-next-label">Далее</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="main-news-item">
+							<div class="main-news-item-image">
+								<div class="main-news-date">
+									<div class="main-news-date-day">22</div>
+									<div class="main-news-date-month">MAR</div>
+								</div>
+							</div>
+							<div class="main-news-info">
+								<div class="main-news-info-title">Netatmo Welcome – умная камера</div>
+								<div class="main-news-info-text">To prepare for a talk about the changing roles of designers and developers, given at HOW Interactive a few months back, I interviewed 20+ web shops. Validated by my own experience...</div>
+								<div class="info-next">
+									<a href="">
+										<div class="next-circle"><img src="DESIGN/img/green_arrow.png"/></div>
+										<div class="info-next-label">Далее</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="main-news-item">
+							<div class="main-news-item-image">
+								<div class="main-news-date">
+									<div class="main-news-date-day">19</div>
+									<div class="main-news-date-month">MAR</div>
+								</div>
+							</div>
+							<div class="main-news-info">
+								<div class="main-news-info-title">WACOM BAMBOO SPARK</div>
+								<div class="main-news-info-text">I hope that by now, in 2014, there is no need to explain why SVG is a blessing to developers who want to ensure that their graphics look sharp on all devices, especially with their huge diversity of resolutions. diversity of resolutions.</div>
+								<div class="info-next">
+									<a href="">
+										<div class="next-circle"><img src="DESIGN/img/green_arrow.png"/></div>
+										<div class="info-next-label">Далее</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="main-news-item">
+							<div class="main-news-item-image">
+								<div class="main-news-date">
+									<div class="main-news-date-day">7</div>
+									<div class="main-news-date-month">MAR</div>
+								</div>
+							</div>
+							<div class="main-news-info">
+								<div class="main-news-info-title">Netatmo Welcome – умная камера</div>
+								<div class="main-news-info-text">I hope that by now, in 2014, there is no need to explain why SVG is a blessing to developers who want to ensure that their graphics look sharp on all devices, especially with their huge diversity of resolutions. diversity of resolutions.</div>
+								<div class="info-next">
+									<a href="">
+										<div class="next-circle"><img src="DESIGN/img/green_arrow.png"/></div>
+										<div class="info-next-label">Далее</div>
+									</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div id="footer">
-				<div class="top-footer">
+				<div class="footer-content">
+					<div class="top-footer">
+						<div class="top-footer-lside">
+							<div class="footer-logo-title">
+								<div class="main-logo">
+									<a href="">
+										<img src="DESIGN/img/logo.png" alt="YaMobail" class="main-logo-img"/>
+									</a>
+								</div>
+								<div class="main-title">
+									гаджеты<br/>и аксесуары
+								</div>
+							</div>
+							<div class="footer-site-info">
+								<p>Nunc eu purus nec elit dapibus rutrum. Integer nibh dui, aliquet in leo eget, porta tincidunt quam.</p>
+								<p>Vivamus non metus est. Etiam eu tellus justo. Vivamus placerat vestibulum eleifend. Sed viverra felis ante, id viverra enim pellentesque vitae.</p>
+								<div class="info-next">
+									<a href="">
+										<div class="next-circle"><img src="DESIGN/img/green_arrow.png"/></div>
+										<div class="info-next-label">Далее</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="top-footer-mside">
+							<div class="top-footer-side-title">ПОСЛЕДНИЕ НОВОСТИ</div>
+							<div class="footer-news">
+								<div class="footer-news-item">
+									<div class="footer-news-item-img"></div>
+									<div class="footer-news-item-info">
+										<div class="footer-news-item-title">Последняя новость</div>
+										<div class="footer-news-item-text">
+											<p>
+												Suspendisse consectetur ligula vitae leo faucibus, a tincidunt leo...<br/>
+												<span class="footer-news-item-date">21 December, 2017</span>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="footer-news-item">
+									<div class="footer-news-item-img"></div>
+									<div class="footer-news-item-info">
+										<div class="footer-news-item-title">Последняя новость</div>
+										<div class="footer-news-item-text">
+											<p>
+												Suspendisse consectetur ligula vitae leo faucibus, a tincidunt leo...<br/>
+												<span class="footer-news-item-date">21 December, 2017</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="top-footer-rside">
+							<div class="top-footer-side-title">ОБРАТНАЯ СВЯЗЬ</div>
+							<form class="callback-form">
+								<input class="callback-form-input" type="text" placeholder="Имя"/>
+								<input class="callback-form-input" type="text" placeholder="e-mail@gamil.com"/>
+								<textarea class="callback-form-textarea"></textarea>
+								<button type="submit" class="button callback-form-submit">ОТПРАВИТЬ</button>
+							</form>
+						</div>
+					</div>
+					<div class="middle-footer">
+						<ul class="social-info">
+							<li class="social-info-logo">
+								<a href="http://vk.com/yamobail"><img src="DESIGN/img/vk.png"/></a>
+							</li>
+							<li class="social-info-logo">
+								<a href=""><img src="DESIGN/img/fb.png"/></a>
+							</li>
+							<li class="social-info-logo">
+								<a href=""><img src="DESIGN/img/tw.png"/></a>
+							</li>
+							<li class="social-info-logo">
+								<a href=""><img src="DESIGN/img/ok.png"/></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-nav">
 				</div>
 			</div>
 		</div>
