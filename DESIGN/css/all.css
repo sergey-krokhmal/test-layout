@@ -1,6 +1,6 @@
 /* FONTS */
 
-@font-face {
+/*@font-face {
     font-family: "LatoRegular";
     src: url("../fonts/LatoCirillic/Lato-Regular.ttf") format("truetype");
     font-style: normal;
@@ -26,7 +26,49 @@
     src: url("../fonts/LatoCirillic/Lato-BoldItalic.ttf") format("truetype");
     font-style: italic;
     font-weight: bold;
+}*/
+
+/*Design font*/
+@font-face {
+    font-family: "LatoRegular";
+    src: url("../fonts/LatoFont/LatoRegular/LatoRegular.eot");
+    src: url("../fonts/LatoFont/LatoRegular/LatoRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/LatoFont/LatoRegular/LatoRegular.woff") format("woff"),
+    url("../fonts/LatoFont/LatoRegular/LatoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
+
+@font-face {
+    font-family: "LatoRegular";
+    src: url("../fonts/LatoFont/LatoBold/LatoBold.eot");
+    src: url("../fonts/LatoFont/LatoBold/LatoBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/LatoFont/LatoBold/LatoBold.woff") format("woff"),
+    url("../fonts/LatoFont/LatoBold/LatoBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "LatoRegular";
+    src: url("../fonts/LatoFont/LatoItalic/LatoItalic.eot");
+    src: url("../fonts/LatoFont/LatoItalic/LatoItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/LatoFont/LatoItalic/LatoItalic.woff") format("woff"),
+    url("../fonts/LatoFont/LatoItalic/LatoItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "LatoRegular";
+    src: url("../fonts/LatoFont/LatoBoldItalic/LatoBoldItalic.eot");
+    src: url("../fonts/LatoFont/LatoBoldItalic/LatoBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/LatoFont/LatoBoldItalic/LatoBoldItalic.woff") format("woff"),
+    url("../fonts/LatoFont/LatoBoldItalic/LatoBoldItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: bold;
+}
+
 
 @font-face {
 	font-family: 'rubl-regular';
@@ -43,7 +85,7 @@
 
 body {
 	margin: 0;
-	font-family: 'LatoRegular', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 
 .no-margin  {
@@ -487,6 +529,7 @@ body {
 	font-family: "Consolas", sans-serif;
 	position: relative;
 	top: -1px;
+	font-weight: bold;
 }
 
 .arrow-button{
@@ -503,6 +546,28 @@ body {
 .arrow-button.active {
 	color: white;
 	background: #83b33f;
+}
+
+.main-goods-slider .bx-controls-direction a {
+	width: 30px;
+	height: 30px;
+}
+
+.main-goods-slider .bx-controls-direction a.disabled{
+	display: block;
+}
+
+.main-goods-slider .bx-next {
+	top: 0;
+	background: url('../img/right_btn.png');
+}
+
+.main-goods-slider .bx-next.disabled {
+	background: url('../img/right_btn_disabled.png');
+}
+
+.main-goods-slider .bx-next:hover{
+	background-position: 0;
 }
 
 .main-goods-nav{
