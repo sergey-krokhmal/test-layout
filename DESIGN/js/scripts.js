@@ -25,11 +25,13 @@ function toggleMenu(link_id, sub_menu_id, link_items_class, pic_class){
 $(document).ready(function() {
     $(".header-subnav-menu[id*='hs-menu-']").hide();
 	
-	$('.main-slider .bxslider').bxSlider({
+	$('.main-slider>.bxslider').bxSlider({
 		controls: false,
+		auto: true,
+		speed: 1500
 	});
 	
-	$('.latest-goods-slider .bxslider').bxSlider({
+	$('.latest-goods-slider>.bxslider').bxSlider({
 		pager: false,
 		infiniteLoop: false,
 		controls: true,
@@ -41,7 +43,7 @@ $(document).ready(function() {
 		moveSlides: 1
 	});
 	
-	$('.recommended-goods-slider .bxslider').bxSlider({
+	$('.recommended-goods-slider>.bxslider').bxSlider({
 		pager: false,
 		infiniteLoop: false,
 		controls: true,
@@ -53,53 +55,22 @@ $(document).ready(function() {
 		moveSlides: 1
 	});
 	
-	brands_visible_count = 6;
-	var brands_slider = $('.main-brands-slider .bxslider').bxSlider({
+	$('.goods-item-photo-slider>.bxslider').bxSlider({
 		pager: false,
 		infiniteLoop: false,
-		controls: false,
-		//pagerType: 'short',
-		minSlides: brands_visible_count,
-		maxSlides: brands_visible_count,
+		controls: true,
+		hideControlOnEnd: true
+	});
+	
+	$('.main-brands-slider .bxslider').bxSlider({
+		pager: false,
+		infiniteLoop: false,
+		controls: true,
+		hideControlOnEnd: true,
+		minSlides: 6,
+		maxSlides: 6,
 		slideWidth: 180,
 		slideMargin: 80,
-		moveSlides: 1,
-		onSlideAfter: function(){
-			activateSlideButton(brands_slider, 'main-brands-prev', 'main-brands-next', brands_visible_count);
-		}
+		moveSlides: 1
 	});
-	
-	$('#main-brands-next').click(function(){
-		brands_slider.goToNextSlide();
-		return false;
-	});
-
-	$('#main-brands-prev').click(function(){
-		brands_slider.goToPrevSlide();
-		return false;
-	});
-	
 });
-
-
-
-function toggle(objName) {
-    var obj = $(objName),
-        blocks = $("div[id*='vipad-']");
-    
-    if (obj.css("display") != "none") {
-        obj.animate({ height: 'hide' }, 500);
-    } else {
-        var visibleBlocks = $("div[id*='vipad-']:visible");
-
-        if (visibleBlocks.length < 1) {
-            obj.animate({ height: 'show' }, 500);
-        } else {
-            $(visibleBlocks).animate({ height: 'hide' }, 500, function() {
-                obj.animate({ height: 'show' }, 500);
-            });            
-        }
-        
-    }
-
-}
