@@ -26,77 +26,31 @@ $(document).ready(function() {
     $(".header-subnav-menu[id*='hs-menu-']").hide();
 	
 	$('.main-slider .bxslider').bxSlider({
-		controls: false
+		controls: false,
 	});
-
-	function activateSlideButton(slider, prev_id, next_id, visible_count){
-		var slides_count = Math.ceil(slider.getSlideCount() - visible_count + 1);
-		var current_slide = slider.getCurrentSlide() + 1;
-		//console.log('total: ' + slides_count);
-		//console.log('cur: ' + current_slide);
-		if (current_slide == 1){
-			$('#' + prev_id).removeClass('active');
-		} else {
-			$('#' + prev_id).addClass('active');
-		}
-		if (current_slide  == slides_count){
-			$('#' + next_id).removeClass('active');
-		} else {
-			$('#' + next_id).addClass('active');
-		}
-	}
 	
-	lg_visible_count = 4;
-	var lg_slider = $('.latest-goods-slider .bxslider').bxSlider({
+	$('.latest-goods-slider .bxslider').bxSlider({
 		pager: false,
 		infiniteLoop: false,
 		controls: true,
 		hideControlOnEnd: true,
-		//pagerType: 'short',
-		minSlides: lg_visible_count,
-		maxSlides: lg_visible_count,
+		minSlides: 4,
+		maxSlides: 4,
 		slideWidth: 270,
 		slideMargin: 30,
-		moveSlides: 1,
-		onSlideAfter: function(){
-			activateSlideButton(lg_slider, 'latest-goods-prev', 'latest-goods-next', lg_visible_count);
-		}
+		moveSlides: 1
 	});
 	
-	$('#latest-goods-next').click(function(){
-		lg_slider.goToNextSlide();
-		return false;
-	});
-
-	$('#latest-goods-prev').click(function(){
-		lg_slider.goToPrevSlide();
-		return false;
-	});
-	
-	rg_visible_count = 4;
-	var rg_slider = $('.recommended-goods-slider .bxslider').bxSlider({
+	$('.recommended-goods-slider .bxslider').bxSlider({
 		pager: false,
 		infiniteLoop: false,
-		controls: false,
-		//pagerType: 'short',
-		minSlides: rg_visible_count,
-		maxSlides: rg_visible_count,
+		controls: true,
+		hideControlOnEnd: true,
+		minSlides: 4,
+		maxSlides: 4,
 		slideWidth: 270,
 		slideMargin: 30,
-		moveSlides: 1,
-		onSlideAfter: function(){
-			activateSlideButton(rg_slider, 'recommended-goods-prev', 'recommended-goods-next', rg_visible_count);
-		}
-	});
-	
-	$('#recommended-goods-next').click(function(){
-		rg_slider.goToNextSlide();
-		return false;
-	});
-
-	$('#recommended-goods-prev').click(function(){
-		rg_slider.goToPrevSlide();
-		return false;
+		moveSlides: 1
 	});
 	
 	brands_visible_count = 6;

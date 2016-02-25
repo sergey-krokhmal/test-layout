@@ -233,13 +233,15 @@ body {
 	line-height: 12pt;
 	font-size: 12pt;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 .callback-button   {
 	float: left;
 	margin-top: 7px;
 	height: 40px;
-	line-height: 10px;
+	line-height: 40px;
+	font-size: 13pt;
 	box-sizing: border-box;
 	padding: 0 12px;
 }
@@ -412,7 +414,6 @@ body {
 }
 
 .header-subnav-item {
-	height: 50px;
     line-height: 50px;
     padding: 0 15px 0 30px;
 	cursor: pointer;
@@ -445,17 +446,26 @@ body {
 	width: 770px;
 	height: 600px;
 	float: left;
+	position: relative;
 }
 
-.main-slider .bx-wrapper .bx-pager {
-	bottom: 54px;
-    right: 70px;
-	padding: 0;
+.bxslider {
+	margin: 0;
 }
 
-.main-slider .bx-wrapper .bx-pager.bx-default-pager a {
+.main-slider .bx-pager{
+	position: absolute;
+	bottom: 70px;
+	right: 170px;
+}
+
+.main-slider .bx-pager-item{
+	float:left;
+}
+
+.main-slider .bx-pager-link {
 	background: white;
-	text-indent: -9999px;
+	font-size: 0;
 	display: block;
 	width: 16px;
 	height: 16px;
@@ -467,18 +477,10 @@ body {
 	box-sizing: border-box;
 }
 
-.main-slider .bx-wrapper .bx-pager.bx-default-pager a:hover,
-.main-slider .bx-wrapper .bx-pager.bx-default-pager a.active {
+.main-slider .bx-pager-link:hover,
+.main-slider .bx-pager-link.active {
 	background: #ccc;
-    margin-top: 2px;
-    width: 16px;
-    height: 16px;
     border: 2px solid white;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    top: 2px;
-    position: relative;
 }
 
 .main-rside{
@@ -501,8 +503,12 @@ body {
 
 .next-button {
 	margin-top: 12px;
-	height: 50px;
-	padding: 0 50px;
+    padding: 0;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+	display: inline-block;
 }
 
 .latest-goods{
@@ -548,26 +554,8 @@ body {
 	background: #83b33f;
 }
 
-.main-goods-slider .bx-controls-direction a {
-	width: 30px;
-	height: 30px;
-}
-
-.main-goods-slider .bx-controls-direction a.disabled{
-	display: block;
-}
-
-.main-goods-slider .bx-next {
-	top: 0;
-	background: url('../img/right_btn.png');
-}
-
-.main-goods-slider .bx-next.disabled {
-	background: url('../img/right_btn_disabled.png');
-}
-
-.main-goods-slider .bx-next:hover{
-	background-position: 0;
+.main-goods-slider {
+	
 }
 
 .main-goods-nav{
@@ -577,6 +565,38 @@ body {
 .main-goods-slider {
 	margin: 47px 0 0 0;
 	padding: 0;
+	position: relative;
+}
+
+.main-goods-slider .bx-controls-direction {
+	position: absolute;
+    right: 0;
+	top: -91px;
+}
+
+.main-goods-slider .bx-next {
+	background-image: url('../img/right_btn.png');
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+    display: inline-block;
+}
+
+.main-goods-slider .bx-next.disabled{
+	background-image: url('../img/right_btn_disabled.png');
+}
+
+.main-goods-slider .bx-prev {
+	background-image: url('../img/left_btn.png');
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+    display: inline-block;
+	margin-right: 10px;
+}
+
+.main-goods-slider .bx-prev.disabled{
+	background-image: url('../img/left_btn_disabled.png');
 }
 
 .main-goods-item {
