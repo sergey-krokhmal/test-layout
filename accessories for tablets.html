@@ -8,6 +8,8 @@
 		<!--link rel="stylesheet" type="text/css" href="DESIGN/css/jquery.bxslider.css"/-->
 		<link rel="stylesheet" type="text/css" href="DESIGN/css/all.css"/>
 		<script type="text/javascript" src="DESIGN/js/jquery/jquery-min.js"></script>
+		<script type="text/javascript" src="DESIGN/js/jquery/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="DESIGN/js/jquery/jquery.customforms.min.js"></script>
 		<script type="text/javascript" src="DESIGN/js/jquery/jquery.bxslider.min.js"></script>
 		<script type="text/javascript" src="DESIGN/js/scripts.js"></script>
 	</head>
@@ -76,34 +78,34 @@
 							<div class="header-nav-content">
 								<ul class="header-nav-list">
 									<li class="header-nav-item" id="hn-item-1">
-										<a href="#" onclick="toggleMenu('hn-item-1','hs-menu-1','header-subnav-menu', '')">
+										<div onclick="toggleMenu('hn-item-1','hs-menu-1','header-subnav-menu', '')">
 											ЧЕХЛЫ И АКСЕСУАРЫ
 											<img class="arrow-down" src="DESIGN/img/arrow_down.png"/>
-										</a>
+										</div>
 									</li>
 									<li class="header-nav-item" id="hn-item-2">
-										<a href="#" onclick="toggleMenu('hn-item-2','hs-menu-2','header-subnav-menu', '')">
+										<div onclick="toggleMenu('hn-item-2','hs-menu-2','header-subnav-menu', '')">
 											ГАДЖЕТЫ И ТЕХНИКА
 											<img class="arrow-down" src="DESIGN/img/arrow_down.png"/>
-										</a>
+										</div>
 									</li>
 									<li class="header-nav-item" id="hn-item-3">
-										<a href="#" onclick="toggleMenu('hn-item-3','hs-menu-3','header-subnav-menu', '')">
+										<div onclick="toggleMenu('hn-item-3','hs-menu-3','header-subnav-menu', '')">
 											МУЛЬТИМЕДИА/ФОТО/ВИДЕО
 											<img class="arrow-down" src="DESIGN/img/arrow_down.png"/>
-										</a>
+										</div>
 									</li>
 									<li class="header-nav-item" id="hn-item-4">
-										<a href="#" onclick="toggleMenu('hn-item-4','hs-menu-4','header-subnav-menu', '')">
+										<div onclick="toggleMenu('hn-item-4','hs-menu-4','header-subnav-menu', '')">
 											АКСЕСУАРЫ ДЛЯ ТЕЛЕФОНОВ
 											<img class="arrow-down" src="DESIGN/img/arrow_down.png"/>
-										</a>
+										</div>
 									</li>
 									<li class="header-nav-item" id="hn-item-5">
-										<a href="#" onclick="toggleMenu('hn-item-5','hs-menu-5','header-subnav-menu', '')">
+										<div onclick="toggleMenu('hn-item-5','hs-menu-5','header-subnav-menu', '')">
 											АКСЕСУАРЫ ДЛЯ ПЛАНШЕТОВ
 											<img class="arrow-down" src="DESIGN/img/arrow_down.png"/>
-										</a>
+										</div>
 									</li>
 								</ul>
 							</div>
@@ -1106,15 +1108,755 @@
 				</div>
 				<div class="main-category-goods">
 					<div class="main-category-goods-content">
-						<div class="category-filter">
+						<div class="left-sidebar">
 							<div class="category-filter-title">
 								<div class="green-square"></div>
 								<div class="category-filter-title-text">Фильтр</div>
 							</div>
-							<div class="filter-select-category">
+							<div class="category-filter">
+								<div class="filter-dropdown">
+									<div class="filter-dropdown-title" onclick="toggle_dropdown('category-filter-1', 'dropdown-img-1')">
+										КАТЕГОРИЯ
+									</div>
+									<div class="dropdown-button-img dropdown-up" id="dropdown-img-1"></div>
+									<ul class="category-filter-list" id='category-filter-1'>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-1" name="sub-cetegory" class="cstm-checkbox" checked="checked" value="1"/>
+												<label for='sub-category-1'>Док-станции и контроллеры</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-2" name="sub-cetegory" class="cstm-checkbox" value="2"/>
+												<label for='sub-category-2'>Защитные пленки для планшетов</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-3" name="sub-cetegory" class="cstm-checkbox" value="3"/>
+												<label for='sub-category-3'>Защитные стекла для планшетов</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-4" name="sub-cetegory" class="cstm-checkbox" value="4"/>
+												<label for='sub-category-4'>Универсальные чехлы для планшетов</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-5" name="sub-cetegory" class="cstm-checkbox" value="5"/>
+												<label for='sub-category-5'>Чехлы для Microsoft Surface</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-6" name="sub-cetegory" class="cstm-checkbox" value="6"/>
+												<label for='sub-category-6'>Чехлы для планшета IconBIT</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-7" name="sub-cetegory" class="cstm-checkbox" value="7"/>
+												<label for='sub-category-7'>Чехлы для планшета Acer</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-8" name="sub-cetegory" class="cstm-checkbox" value="8"/>
+												<label for='sub-category-8'>Чехлы для планшета Asus</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-9" name="sub-cetegory" class="cstm-checkbox" value="9"/>
+												<label for='sub-category-9'>Чехлы для планшета Huawei</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-10" name="sub-cetegory" class="cstm-checkbox" value="10"/>
+												<label for='sub-category-10'>Чехлы для планшета Lenovo</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-11" name="sub-cetegory" class="cstm-checkbox" value="11"/>
+												<label for='sub-category-11'>Чехлы для планшета LG</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-12" name="sub-cetegory" class="cstm-checkbox" value="12"/>
+												<label for='sub-category-12'>Чехлы для планшета Nokia</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-13" name="sub-cetegory" class="cstm-checkbox" value="13"/>
+												<label for='sub-category-13'>Чехлы для планшета Prestigio</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-14" name="sub-cetegory" class="cstm-checkbox" value="14"/>
+												<label for='sub-category-14'>Чехлы для планшета Samsung</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-15" name="sub-cetegory" class="cstm-checkbox" value="15"/>
+												<label for='sub-category-15'>Чехлы для планшета Sony</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-16" name="sub-cetegory" class="cstm-checkbox" value="16"/>
+												<label for='sub-category-16'>Аксессуары для Samsung</label>
+											</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="category-filter-title">
+								<div class="green-square"></div>
+								<div class="category-filter-title-text">Цена</div>
+							</div>
+							<div class="price-range-filter">
+								<div class="price-slider"></div>
+								<div class="price-slider-range">
+									<input type="text" value="500" class="price-range-value price-range-left"/>
+									<span class="price-range-value-devider"></span>
+									<input type="text" value="5000" class="price-range-value price-range-right"/>
+								</div>
+								<div class="xxx">
+								</div>
+							</div>
+							<div class="category-filter">
+								<div class="filter-dropdown">
+									<div class="filter-dropdown-title" onclick="toggle_dropdown('category-filter-2', 'dropdown-img-2')">
+										ПРОИЗВОДИТЕЛЬ
+									</div>
+									<div class="dropdown-button-img dropdown-up" id='dropdown-img-2'></div>
+									<ul class="category-filter-list" id='category-filter-2'>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-1" name="provider" class="cstm-checkbox" checked="checked"  value="1"/>
+												<label for='provider-1'>Capdase</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-2" name="provider" class="cstm-checkbox" value="2"/>
+												<label for='provider-2'>DF</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-3" name="provider" class="cstm-checkbox" value="3"/>
+												<label for='provider-3'>Hoco</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-4" name="provider" class="cstm-checkbox" value="4"/>
+												<label for='provider-4'>IBOX</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-6" name="provider" class="cstm-checkbox" value="5"/>
+												<label for='provider-6'>Ipega</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-7" name="provider" class="cstm-checkbox" value="6"/>
+												<label for='provider-7'>iRidium</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-8" name="provider" class="cstm-checkbox" value="7"/>
+												<label for='provider-8'>Jisoncase</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-9" name="provider" class="cstm-checkbox" value="8"/>
+												<label for='provider-9'>Litu</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-10" name="provider" class="cstm-checkbox" value="9"/>
+												<label for='provider-10'>Promate</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-11" name="provider" class="cstm-checkbox" value="10"/>
+												<label for='provider-11'>Redline</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-12" name="provider" class="cstm-checkbox" value="11"/>
+												<label for='provider-12'>Rock</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-13" name="provider" class="cstm-checkbox" value="12"/>
+												<label for='provider-13'>UAG</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-14" name="provider" class="cstm-checkbox" value="13"/>
+												<label for='provider-14'>Yoobao</label>
+											</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="category-filter">
+								<div class="filter-dropdown">
+									<div class="filter-dropdown-title" onclick="toggle_dropdown('category-filter-3', 'dropdown-img-3')">
+										ЦВЕТ
+									</div>
+									<div class="dropdown-button-img dropdown-up" id="dropdown-img-3"></div>
+									<ul class="category-filter-list" id="category-filter-3">
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-1" name="color" class="cstm-checkbox" checked="checked"  value="1"/>
+												<label for='color-1'>Space Grey</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-2" name="color" class="cstm-checkbox" value="2"/>
+												<label for='color-2'>Бежевый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-3" name="color" class="cstm-checkbox" value="3"/>
+												<label for='color-3'>Белый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-4" name="color" class="cstm-checkbox" value="4"/>
+												<label for='color-4'>Белый/Серый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-6" name="color" class="cstm-checkbox" value="5"/>
+												<label for='color-6'>Бирюзовый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-7" name="color" class="cstm-checkbox" value="6"/>
+												<label for='color-7'>Бордовый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-8" name="color" class="cstm-checkbox" value="7"/>
+												<label for='color-8'>Бронзовый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-9" name="color" class="cstm-checkbox" value="8"/>
+												<label for='color-9'>Голубой</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-10" name="color" class="cstm-checkbox" value="9"/>
+												<label for='color-10'>Желтый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-11" name="color" class="cstm-checkbox" value="10"/>
+												<label for='color-11'>Зеленый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-12" name="color" class="cstm-checkbox" value="11"/>
+												<label for='color-12'>Золотой</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-13" name="color" class="cstm-checkbox" value="12"/>
+												<label for='color-13'>Кирпичный</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-14" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-14'>Коралловый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-15" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-15'>Коричневый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-16" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-16'>Красный</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-17" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-17'>Кремовый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-18" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-18'>Лайм</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-19" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-19'>Леопард</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-20" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-20'>Малиновый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-21" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-21'>Металлический</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-22" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-22'>Мятный</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-23" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-23'>Небесно-голубой</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-24" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-24'>Оранжевый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-25" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-25'>Прозрачно-матовый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-26" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-26'>Прозрачный</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-27" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-27'>Разноцветный</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-28" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-28'>Розовый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-29" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-29'>Светло-коричневый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-30" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-30'>Светло-серый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-31" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-31'>Серебристый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-32" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-32'>Серебро/Зеленый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-33" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-33'>Серебро/Черный</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-34" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-34'>Серый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-35" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-35'>Синий</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-36" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-36'>Сиреневый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-37" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-37'>Стальной</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-38" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-38'>Темно-зеленый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-39" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-39'>Темно-коричневый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-40" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-40'>Темно-серый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-41" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-41'>Темно-синий</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-42" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-42'>Фиолетовый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-43" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-43'>Хаки</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-44" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-44'>Хром</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-45" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-45'>Черный</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-46" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-46'>Черный/Белый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-47" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-47'>Черный/Зеленый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-48" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-48'>Черный/Золотой</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-49" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-49'>Черный/Серый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-50" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-50'>Шампань</label>
+											</span>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
-						<div class="category-goods-list">
+						<div class="right-sidebar">
+							<div class="right-sidebar-tools">
+								<div class="sort-goods-tools">
+									<select class="sort-goods-select">
+										<option value="price">Цене</option>
+										<option value="price">Названию</option>
+										<option value="price">Артикулу</option>
+									</select>
+									<a class="sort-goods-direction" id="category-sort-direction" onclick="toggle_class('category-sort-direction', 'direction_down')"></a>									
+								</div>
+								<div class="page-limiter">
+									Выводить по:
+									<span class="page-limiter-links">
+										<a href="">20</a> |
+										<a href="" class="active">50</a> |
+										<a href="">100</a>
+									</span>
+								</div>
+							</div>
+							<div class="category-goods-list">
+								<div class="main-goods-item">
+									<div class="goods-item-top-info">
+										<div class="goods-item-presence">2-3 дня</div>
+										<div class="goods-item-articul">Арт. 11111</div>
+									</div>
+									<div class="goods-item-photo goods-item-photo-slider">
+										<ul class="bxslider">
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_1.png"/></li>
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_2.png"/></li>
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_3.png"/></li>
+										</ul>
+									</div>
+									<div class="goods-item-bottom-info">
+										<div class="good-item-name">
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+										</div>
+										<div class="good-item-price">589.00<span class="rub-sign">a</span></div>
+									</div>
+									<div class="goods-item-tools">
+										<a href="" class="button goods-item-tools-button button-incard">
+											<div class="button-label">
+												<div class="button-img"></div>
+												<span class="button-label-text">В корзину</span>
+											</div>
+										</a>
+										<a href="" class="button goods-item-tools-button button-next">
+											<div class="button-label">
+												<div class="button-img"></div>
+												<span class="button-label-text">Далее</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="main-goods-item">
+									<div class="goods-item-top-info">
+										<div class="goods-item-presence">2-3 дня</div>
+										<div class="goods-item-articul">Арт. 11111</div>
+									</div>
+									<div class="goods-item-photo goods-item-photo-slider">
+										<ul class="bxslider">
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_1.png"/></li>
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_2.png"/></li>
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_3.png"/></li>
+										</ul>
+									</div>
+									<div class="goods-item-bottom-info">
+										<div class="good-item-name">
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+										</div>
+										<div class="good-item-price">589.00<span class="rub-sign">a</span></div>
+									</div>
+									<div class="goods-item-tools">
+										<a href="" class="button goods-item-tools-button button-incard">
+											<div class="button-label">
+												<div class="button-img"></div>
+												<span class="button-label-text">В корзину</span>
+											</div>
+										</a>
+										<a href="" class="button goods-item-tools-button button-next">
+											<div class="button-label">
+												<div class="button-img"></div>
+												<span class="button-label-text">Далее</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="main-goods-item">
+									<div class="goods-item-top-info">
+										<div class="goods-item-presence">2-3 дня</div>
+										<div class="goods-item-articul">Арт. 11111</div>
+									</div>
+									<div class="goods-item-photo goods-item-photo-slider">
+										<ul class="bxslider">
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_1.png"/></li>
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_2.png"/></li>
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_3.png"/></li>
+										</ul>
+									</div>
+									<div class="goods-item-bottom-info">
+										<div class="good-item-name">
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+										</div>
+										<div class="good-item-price">589.00<span class="rub-sign">a</span></div>
+									</div>
+									<div class="goods-item-tools">
+										<a href="" class="button goods-item-tools-button button-incard">
+											<div class="button-label">
+												<div class="button-img"></div>
+												<span class="button-label-text">В корзину</span>
+											</div>
+										</a>
+										<a href="" class="button goods-item-tools-button button-next">
+											<div class="button-label">
+												<div class="button-img"></div>
+												<span class="button-label-text">Далее</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="main-goods-item">
+									<div class="goods-item-top-info">
+										<div class="goods-item-presence">2-3 дня</div>
+										<div class="goods-item-articul">Арт. 11111</div>
+									</div>
+									<div class="goods-item-photo goods-item-photo-slider">
+										<ul class="bxslider">
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_1.png"/></li>
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_2.png"/></li>
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_3.png"/></li>
+										</ul>
+									</div>
+									<div class="goods-item-bottom-info">
+										<div class="good-item-name">
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+										</div>
+										<div class="good-item-price">589.00<span class="rub-sign">a</span></div>
+									</div>
+									<div class="goods-item-tools">
+										<a href="" class="button goods-item-tools-button button-incard">
+											<div class="button-label">
+												<div class="button-img"></div>
+												<span class="button-label-text">В корзину</span>
+											</div>
+										</a>
+										<a href="" class="button goods-item-tools-button button-next">
+											<div class="button-label">
+												<div class="button-img"></div>
+												<span class="button-label-text">Далее</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="main-goods-item">
+									<div class="goods-item-top-info">
+										<div class="goods-item-presence">Предзаказ</div>
+										<div class="goods-item-articul">Арт. 11111</div>
+									</div>
+									<div class="goods-item-photo goods-item-photo-slider">
+										<ul class="bxslider">
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_1.png"/></li>
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_2.png"/></li>
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_3.png"/></li>
+										</ul>
+									</div> 
+									<div class="goods-item-bottom-info">
+										<div class="good-item-name">
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+										</div>
+										<div class="good-item-price">
+											<span class="good-item-price-value old-price">589.00<span class="rub-sign">a</span></span>
+											<span class="good-item-price-new">489.00<span class="rub-sign">a</span></span>
+										</div>
+									</div>
+									<div class="goods-item-tools">
+										<a href="" class="button goods-item-tools-button button-incard">
+											<div class="button-label">
+												<div class="button-img"></div>
+												<span class="button-label-text">В корзину</span>
+											</div>
+										</a>
+										<a href="" class="button goods-item-tools-button button-next">
+											<div class="button-label">
+												<div class="button-img"></div>
+												<span class="button-label-text">Далее</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="main-goods-item">
+									<div class="goods-item-top-info">
+										<div class="goods-item-presence">Предзаказ</div>
+										<div class="goods-item-articul">Арт. 11111</div>
+									</div>
+									<div class="goods-item-photo goods-item-photo-slider">
+										<ul class="bxslider">
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_1.png"/></li>
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_2.png"/></li>
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_3.png"/></li>
+										</ul>
+									</div> 
+									<div class="goods-item-bottom-info">
+										<div class="good-item-name">
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+										</div>
+										<div class="good-item-price">
+											<span class="good-item-price-value old-price">589.00<span class="rub-sign">a</span></span>
+											<span class="good-item-price-new">489.00<span class="rub-sign">a</span></span>
+										</div>
+									</div>
+									<div class="goods-item-tools">
+										<a href="" class="button goods-item-tools-button button-incard">
+											<div class="button-label">
+												<div class="button-img"></div>
+												<span class="button-label-text">В корзину</span>
+											</div>
+										</a>
+										<a href="" class="button goods-item-tools-button button-next">
+											<div class="button-label">
+												<div class="button-img"></div>
+												<span class="button-label-text">Далее</span>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

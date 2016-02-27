@@ -1,0 +1,2806 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>YaMobile</title>
+		<meta charset="utf-8"/>
+		<!--link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'-->
+		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,400italic,700italic&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+		<!--link rel="stylesheet" type="text/css" href="DESIGN/css/jquery.bxslider.css"/-->
+		<link rel="stylesheet" type="text/css" href="DESIGN/css/all.css"/>
+		<script type="text/javascript" src="DESIGN/js/jquery/jquery-min.js"></script>
+		<script type="text/javascript" src="DESIGN/js/jquery/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="DESIGN/js/jquery/jquery.customforms.min.js"></script>
+		<script type="text/javascript" src="DESIGN/js/jquery/jquery.bxslider.min.js"></script>
+		<script type="text/javascript" src="DESIGN/js/scripts.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<div class="top-header">
+					<div class="top-nav">
+						<ul class="top-nav-list">
+							<li class="top-nav-item"><a class="top-nav-item-link blue-link" href="">Главная</a></li>
+							<li class="top-nav-item top-nav-item-devider">|</li>
+							<li class="top-nav-item"><a class="top-nav-item-link" href="">Новости</a></li>
+							<li class="top-nav-item top-nav-item-devider">|</li>
+							<li class="top-nav-item"><a class="top-nav-item-link" href="">О магазине</a></li>
+							<li class="top-nav-item top-nav-item-devider">|</li>
+							<li class="top-nav-item"><a class="top-nav-item-link" href="">Гарантия</a></li>
+							<li class="top-nav-item top-nav-item-devider">|</li>
+							<li class="top-nav-item"><a class="top-nav-item-link" href="">Доставка</a></li>
+							<li class="top-nav-item top-nav-item-devider">|</li>
+							<li class="top-nav-item"><a class="top-nav-item-link" href="">Оплата</a></li>
+							<li class="top-nav-item top-nav-item-devider">|</li>
+							<li class="top-nav-item"><a class="top-nav-item-link" href="">Гарантии</a></li>
+						</ul>
+						<ul class="top-nav-list enter-site">
+							<li class="top-nav-item"><a class="top-nav-item-link enter-site-link" href="">ВХОД</a></li>
+							<li class="top-nav-item top-nav-item-devider">|</li>
+							<li class="top-nav-item no-margin"><a class="top-nav-item-link enter-site-link" href="">РЕГИСТРАЦИЯ</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="bottom-header">
+					<div class="bottom-header-container">
+						<div class="header-tools">
+							<div class="main-site-logo">
+								<div class="main-logo">
+									<a href="">
+										<img src="DESIGN/img/logo.png" alt="YaMobail" class="main-logo-img"/>
+									</a>
+								</div>
+								<div class="main-title">
+									гаджеты<br/>и аксесуары
+								</div>
+							</div>
+							<div class="search-line">
+								<input class="search-input" type="text" placeholder="Поиск..."/>
+							</div>
+							<div class="callback">
+								<a href="" class="button callback-button">Обратный звонок</a>
+								<div class="phone-contacts">
+									<img src="DESIGN/img/phone.png" alt="phone" class="phone-img"/>
+								</div>
+								<div class="contacts">
+									<div class="phone-number">8 (999) 123-45-67</div>
+									<div class="phone-number">8 (4862) 12-34-56</div>
+								</div>
+							</div>
+							<div class="header-cart">
+								<a class="button cart-button" href="">
+									<div class="incart-count-circle">5</div>
+									<div class="cart-button-img"></div>
+								</a>
+							</div>
+						</div>
+						<div class="header-nav" >
+							<a href="" class="create-case-button">СОЗДАТЬ СВОЙ ЧЕХОЛ</a>
+							<div class="header-nav-content">
+								<ul class="header-nav-list">
+									<li class="header-nav-item" id="hn-item-1">
+										<div onclick="toggleMenu('hn-item-1','hs-menu-1','header-subnav-menu', '')">
+											ЧЕХЛЫ И АКСЕСУАРЫ
+											<img class="arrow-down" src="DESIGN/img/arrow_down.png"/>
+										</div>
+									</li>
+									<li class="header-nav-item" id="hn-item-2">
+										<div onclick="toggleMenu('hn-item-2','hs-menu-2','header-subnav-menu', '')">
+											ГАДЖЕТЫ И ТЕХНИКА
+											<img class="arrow-down" src="DESIGN/img/arrow_down.png"/>
+										</div>
+									</li>
+									<li class="header-nav-item" id="hn-item-3">
+										<div onclick="toggleMenu('hn-item-3','hs-menu-3','header-subnav-menu', '')">
+											МУЛЬТИМЕДИА/ФОТО/ВИДЕО
+											<img class="arrow-down" src="DESIGN/img/arrow_down.png"/>
+										</div>
+									</li>
+									<li class="header-nav-item" id="hn-item-4">
+										<div onclick="toggleMenu('hn-item-4','hs-menu-4','header-subnav-menu', '')">
+											АКСЕСУАРЫ ДЛЯ ТЕЛЕФОНОВ
+											<img class="arrow-down" src="DESIGN/img/arrow_down.png"/>
+										</div>
+									</li>
+									<li class="header-nav-item" id="hn-item-5">
+										<div onclick="toggleMenu('hn-item-5','hs-menu-5','header-subnav-menu', '')">
+											АКСЕСУАРЫ ДЛЯ ПЛАНШЕТОВ
+											<img class="arrow-down" src="DESIGN/img/arrow_down.png"/>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="header-subnav">
+								<div class="header-subnav-content">
+									<div class="header-subnav-menu" id="hs-menu-1">
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для IPhone 4 / 4S
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для IPhone 5C
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для IPhone 5 / 5S
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для IPhone 6 / 6S
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для IPhone 6 / 6S Plus
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для IPad (Всех моделей)
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Сумки для MacBook
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Перчатки для сенсорных экранов
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Подставки, докстанции
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+										</ul>
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Защитные пленки
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Защитные стекла
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Кабели, переходники и разветвители
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Аксессуары для Apple iPod
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Аксессуары для Apple Watch
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Аксессуары для MacBook
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Bluetooth гарнитуры
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Стилусы
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+										</ul>
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Держатели, автомобильные держатели
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Внешние аккумуляторы (power bank)
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Зарядные устройства
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Штативы для селфи (моноподы)
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Автомобильные FM-трансмиттеры
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для MacBook
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Объективы для смартфонов
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="header-subnav-menu" id="hs-menu-2">
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Графические планшеты
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Калибраторы мониторов X-Rite
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Сетевые хранилища Synology
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Здоровье и Фитнес 
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Жесткие диски
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Цифровые ручки
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Очки Google Glass
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														3D очки
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Беспроводные клавиатуры
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+										</ul>
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Все для геймера
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Умные часы
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Радиоуправляемые коллекционные игрушки
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Умный дом (гаджеты)
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Сетевое оборудование
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Товары для спорта
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Электротранспорт
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Wi-Fi роутеры
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Средства ухода
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+										</ul>
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Защищенные телефоны Sonim
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Игровые приставки
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Игровая консоль
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Устройства ввода информации/Коврики
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Флешки. Харды. Диски
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Системы охлаждения
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														USB HUB
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Проекторы
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Сетевые фильтры
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="header-subnav-menu" id="hs-menu-3">
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Наушники
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Проигрыватели виниловых дисков
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Акустические системы, колонки
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Медиаплееры
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Домашний кинотеатр
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Лупы Levenhuk
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Музыкальные аксессуары
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Телескопы и оптические трубы (OTA)
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+										</ul>
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Веб-камеры
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Видеоняни и радионяни
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														HD Медиаплееры
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Проигрыватели Blu-Ray, DVD, CD
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														MP3 плееры
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Аксессуары Levenhuk
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Фотоаксессуары
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+										</ul>
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Телескопы Levenhuk
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Бинокли Levenhuk
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Зрительные трубы Levenhuk
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Монокуляры Levenhuk
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Микроскопы Levenhuk
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Аксессуары Levenhuk Ra
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Цифровые камеры Levenhuk для телескопов и микроскопов
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="header-subnav-menu" id="hs-menu-4">
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Защитные пленки для смартфонов
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для Alcatel
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для Explay
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для HighScreen
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для Keneksi
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для Megafon Login SP-A1
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для Nokia
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для Sony
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для ZTE
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+										</ul>
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Защитные стекла для смарфонов
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для ARK
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для Fly
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для HTC
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для Lenovo
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для Micromax
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для Philips
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для Vertu
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для смартфонов Samsung
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+										</ul>
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для Acer
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для Asus
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для Google Nexus
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для Huawei
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для LG
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для MTS
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для Prestigio
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для Xiaomi
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы универсальные для смартфонов
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="header-subnav-menu" id="hs-menu-5">
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Док-станции и контроллеры
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Универсальные чехлы для планшетов
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для планшетов Aser
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для планшетов Huawei
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для планшетов Nokia
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для планшетов Sony
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+										</ul>
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Защитные стекла для планшетов
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для Microsoft Surface
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для планшетов Asus
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для планшетов Lenovo
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для планшетов Prestigio
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Аксессуары для Samsung
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+										</ul>
+										<ul class="header-subnav-col">
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Защитные стекла для планшетов
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для планшетов IconBIT
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для планшетов Fly
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для планшетов LG
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+											<li class="header-subnav-item">
+												<a class="header-subnav-item-link" href="">
+													<span class="header-subnav-item-text">
+														Чехлы для планшетов Samsung
+													</span>
+													<span class="light-arrow">></span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="main">
+				<div class="main-category-title">
+					<div class="main-category-title-content">
+						<h2 class="main-category-title-name">
+							Гаджеты и техника
+						</h2>
+						<div class="main-category-breadcrumbs">
+							<a href="site.html" class="main-category-breadcrumbs-link">Главная</a>
+							<span class="light-arrow">></span>
+							<a href="" class="main-category-breadcrumbs-link">Гаджеты и техника</a>
+						</div>
+					</div>
+				</div>
+				<div class="main-category-goods">
+					<div class="main-category-goods-content">
+						<div class="left-sidebar">
+							<div class="category-filter-title">
+								<div class="green-square"></div>
+								<div class="category-filter-title-text">Фильтр</div>
+							</div>
+							<div class="category-filter">
+								<div class="filter-dropdown">
+									<div class="filter-dropdown-title" onclick="toggle_dropdown('category-filter-1', 'dropdown-img-1')">
+										КАТЕГОРИЯ
+									</div>
+									<div class="dropdown-button-img dropdown-up" id="dropdown-img-1"></div>
+									<ul class="category-filter-list" id='category-filter-1'>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-1" name="sub-cetegory" class="cstm-checkbox" checked="checked" value="1"/>
+												<label for='sub-category-1'>3D очки</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-2" name="sub-cetegory" class="cstm-checkbox" value="2"/>
+												<label for='sub-category-2'>USB HUB</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-3" name="sub-cetegory" class="cstm-checkbox" value="3"/>
+												<label for='sub-category-3'>Wi-Fi роутеры</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-4" name="sub-cetegory" class="cstm-checkbox" value="4"/>
+												<label for='sub-category-4'>Беспроводные клавиатуры	</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-6" name="sub-cetegory" class="cstm-checkbox" value="5"/>
+												<label for='sub-category-6'>Все для геймера</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-7" name="sub-cetegory" class="cstm-checkbox" value="6"/>
+												<label for='sub-category-7'>Графические планшеты</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-8" name="sub-cetegory" class="cstm-checkbox" value="7"/>
+												<label for='sub-category-8'>Защищенные телефоны Sonim</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-9" name="sub-cetegory" class="cstm-checkbox" value="8"/>
+												<label for='sub-category-9'>Здоровье и Фитнес</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-10" name="sub-cetegory" class="cstm-checkbox" value="9"/>
+												<label for='sub-category-10'>Игровая консоль</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-11" name="sub-cetegory" class="cstm-checkbox" value="10"/>
+												<label for='sub-category-11'>Игровые приставки</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-12" name="sub-cetegory" class="cstm-checkbox" value="11"/>
+												<label for='sub-category-12'>Калибраторы мониторов X-Rite</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-13" name="sub-cetegory" class="cstm-checkbox" value="12"/>
+												<label for='sub-category-13'>Очки Google Glass</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-14" name="sub-cetegory" class="cstm-checkbox" value="13"/>
+												<label for='sub-category-14'>Проекторы</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-15" name="sub-cetegory" class="cstm-checkbox" value="14"/>
+												<label for='sub-category-15'>Радиоуправляемые, коллекционные игрушки</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-16" name="sub-cetegory" class="cstm-checkbox" value="15"/>
+												<label for='sub-category-16'>Сетевое оборудование</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-17" name="sub-cetegory" class="cstm-checkbox" value="17"/>
+												<label for='sub-category-17'>Сетевые хранилища Synology</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-18" name="sub-cetegory" class="cstm-checkbox" value="18"/>
+												<label for='sub-category-18'>Системы охлаждения</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-19" name="sub-cetegory" class="cstm-checkbox" value="19"/>
+												<label for='sub-category-19'>Умные часы</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-20" name="sub-cetegory" class="cstm-checkbox" value="20"/>
+												<label for='sub-category-20'>Умный дом (гаджеты)</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-21" name="sub-cetegory" class="cstm-checkbox" value="21"/>
+												<label for='sub-category-21'>Устройства ввода информации, Коврики</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-22" name="sub-cetegory" class="cstm-checkbox" value="22"/>
+												<label for='sub-category-22'>Флешки. Харды. Диски.</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-23" name="sub-cetegory" class="cstm-checkbox" value="23"/>
+												<label for='sub-category-23'>Цифровые ручки</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-24" name="sub-cetegory" class="cstm-checkbox" value="24"/>
+												<label for='sub-category-24'>Электротранспорт</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-25" name="sub-cetegory" class="cstm-checkbox" value="25"/>
+												<label for='sub-category-25'>Сетевые фильтры</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-26" name="sub-cetegory" class="cstm-checkbox" value="26"/>
+												<label for='sub-category-26'>Средства ухода</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="sub-category-27" name="sub-cetegory" class="cstm-checkbox" value="27"/>
+												<label for='sub-category-27'>Жесткие диски</label>
+											</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="category-filter-title">
+								<div class="green-square"></div>
+								<div class="category-filter-title-text">Цена</div>
+							</div>
+							<div class="price-range-filter">
+								<div class="price-slider"></div>
+								<div class="price-slider-range">
+									<input type="text" value="500" class="price-range-value price-range-left"/>
+									<span class="price-range-value-devider"></span>
+									<input type="text" value="5000" class="price-range-value price-range-right"/>
+								</div>
+								<div class="xxx">
+								</div>
+							</div>
+							<div class="category-filter">
+								<div class="filter-dropdown">
+									<div class="filter-dropdown-title" onclick="toggle_dropdown('category-filter-2', 'dropdown-img-2')">
+										ПРОИЗВОДИТЕЛЬ
+									</div>
+									<div class="dropdown-button-img dropdown-up" id='dropdown-img-2'></div>
+									<ul class="category-filter-list" id='category-filter-2'>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-1" name="provider" class="cstm-checkbox" checked="checked"  value="1"/>
+												<label for='provider-1'>3Doodler</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-2" name="provider" class="cstm-checkbox" value="2"/>
+												<label for='provider-2'>A-Data</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-3" name="provider" class="cstm-checkbox" value="3"/>
+												<label for='provider-3'>Acer</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-4" name="provider" class="cstm-checkbox" value="4"/>
+												<label for='provider-4'>Adidas</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-5" name="provider" class="cstm-checkbox" value="5"/>
+												<label for='provider-5'>APC</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-6" name="provider" class="cstm-checkbox" value="6"/>
+												<label for='provider-6'>Apple</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-7" name="provider" class="cstm-checkbox" value="7"/>
+												<label for='provider-7'>Asus</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-8" name="provider" class="cstm-checkbox" value="8"/>
+												<label for='provider-8'>Avinity</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-9" name="provider" class="cstm-checkbox" value="9"/>
+												<label for='provider-9'>BACtrack</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-10" name="provider" class="cstm-checkbox" value="10"/>
+												<label for='provider-10'>Belkin</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-11" name="provider" class="cstm-checkbox" value="11"/>
+												<label for='provider-11'>Belsis</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-12" name="provider" class="cstm-checkbox" value="12"/>
+												<label for='provider-12'>BenQ</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-13" name="provider" class="cstm-checkbox" value="13"/>
+												<label for='provider-13'>BioLite</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-14" name="provider" class="cstm-checkbox" value="14"/>
+												<label for='provider-14'>BionicBird</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-15" name="provider" class="cstm-checkbox" value="15"/>
+												<label for='provider-15'>Brookstone</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-16" name="provider" class="cstm-checkbox" value="16"/>
+												<label for='provider-16'>Buro</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-17" name="provider" class="cstm-checkbox" value="17"/>
+												<label for='provider-17'>Click & Grow</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-18" name="provider" class="cstm-checkbox" value="18"/>
+												<label for='provider-18'>CoCo</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-19" name="provider" class="cstm-checkbox" value="19"/>
+												<label for='provider-19'>Cogito</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-20" name="provider" class="cstm-checkbox" value="20"/>
+												<label for='provider-20'>Cougar</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-21" name="provider" class="cstm-checkbox" value="21"/>
+												<label for='provider-21'>CVR</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-22" name="provider" class="cstm-checkbox" value="22"/>
+												<label for='provider-22'>D-Link</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-23" name="provider" class="cstm-checkbox" value="23"/>
+												<label for='provider-23'>Deeper</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-24" name="provider" class="cstm-checkbox" value="24"/>
+												<label for='provider-24'>Disney</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-25" name="provider" class="cstm-checkbox" value="25"/>
+												<label for='provider-25'>DJl</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-26" name="provider" class="cstm-checkbox" value="26"/>
+												<label for='provider-26'>DoorBot</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-27" name="provider" class="cstm-checkbox" value="27"/>
+												<label for='provider-27'>Dyson</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-28" name="provider" class="cstm-checkbox" value="28"/>
+												<label for='provider-28'>Edimax</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-29" name="provider" class="cstm-checkbox" value="29"/>
+												<label for='provider-29'>Elari</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-30" name="provider" class="cstm-checkbox" value="30"/>
+												<label for='provider-30'>Energizer</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-31" name="provider" class="cstm-checkbox" value="31"/>
+												<label for='provider-31'>Exeq</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-32" name="provider" class="cstm-checkbox" value="32"/>
+												<label for='provider-32'>FatShark</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-33" name="provider" class="cstm-checkbox" value="33"/>
+												<label for='provider-33'>Fellowes</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-34" name="provider" class="cstm-checkbox" value="34"/>
+												<label for='provider-34'>Fibaro</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-35" name="provider" class="cstm-checkbox" value="35"/>
+												<label for='provider-35'>Fireworks</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-36" name="provider" class="cstm-checkbox" value="36"/>
+												<label for='provider-36'>FishCam</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-37" name="provider" class="cstm-checkbox" value="37"/>
+												<label for='provider-37'>Fisher-Price</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-38" name="provider" class="cstm-checkbox" value="38"/>
+												<label for='provider-38'>Fisheye</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-39" name="provider" class="cstm-checkbox" value="39"/>
+												<label for='provider-39'>Fitbit</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-40" name="provider" class="cstm-checkbox" value="40"/>
+												<label for='provider-40'>Fixitime</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-41" name="provider" class="cstm-checkbox" value="41"/>
+												<label for='provider-41'>Furby Boom</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-42" name="provider" class="cstm-checkbox" value="42"/>
+												<label for='provider-42'>G-Mobi</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-43" name="provider" class="cstm-checkbox" value="43"/>
+												<label for='provider-43'>Garmin</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-44" name="provider" class="cstm-checkbox" value="44"/>
+												<label for='provider-44'>Gembird</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-45" name="provider" class="cstm-checkbox" value="45"/>
+												<label for='provider-45'>Genesis</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-46" name="provider" class="cstm-checkbox" value="46"/>
+												<label for='provider-46'>Goccia</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-47" name="provider" class="cstm-checkbox" value="47"/>
+												<label for='provider-47'>Google</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-48" name="provider" class="cstm-checkbox" value="48"/>
+												<label for='provider-48'>Griffin</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-49" name="provider" class="cstm-checkbox" value="49"/>
+												<label for='provider-49'>GSM</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-50" name="provider" class="cstm-checkbox" value="50"/>
+												<label for='provider-50'>Hobby Engine</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-51" name="provider" class="cstm-checkbox" value="51"/>
+												<label for='provider-51'>Hovis</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-52" name="provider" class="cstm-checkbox" value="52"/>
+												<label for='provider-52'>HyperDrive</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-53" name="provider" class="cstm-checkbox" value="53"/>
+												<label for='provider-53'>i-UFO</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-54" name="provider" class="cstm-checkbox" value="54"/>
+												<label for='provider-54'>iBike</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-55" name="provider" class="cstm-checkbox" value="55"/>
+												<label for='provider-55'>iBlazr</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-56" name="provider" class="cstm-checkbox" value="56"/>
+												<label for='provider-56'>iCon</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-57" name="provider" class="cstm-checkbox" value="57"/>
+												<label for='provider-57'>iHealth</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-58" name="provider" class="cstm-checkbox" value="58"/>
+												<label for='provider-58'>ImaxRC</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-59" name="provider" class="cstm-checkbox" value="59"/>
+												<label for='provider-59'>Infomotion</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-60" name="provider" class="cstm-checkbox" value="60"/>
+												<label for='provider-60'>iSocket</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-61" name="provider" class="cstm-checkbox" value="61"/>
+												<label for='provider-61'>Jawbone</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-62" name="provider" class="cstm-checkbox" value="62"/>
+												<label for='provider-62'>JMT</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-63" name="provider" class="cstm-checkbox" value="63"/>
+												<label for='provider-63'>Kakadu Friends</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-64" name="provider" class="cstm-checkbox" value="64"/>
+												<label for='provider-64'>Kingston</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-65" name="provider" class="cstm-checkbox" value="65"/>
+												<label for='provider-65'>LaCie</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-66" name="provider" class="cstm-checkbox" value="66"/>
+												<label for='provider-66'>Lapka</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-67" name="provider" class="cstm-checkbox" value="67"/>
+												<label for='provider-67'>Leadway</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-68" name="provider" class="cstm-checkbox" value="68"/>
+												<label for='provider-68'>Leap</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-69" name="provider" class="cstm-checkbox" value="69"/>
+												<label for='provider-69'>Lego</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-70" name="provider" class="cstm-checkbox" value="70"/>
+												<label for='provider-70'>LG</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-71" name="provider" class="cstm-checkbox" value="71"/>
+												<label for='provider-71'>LifeTrak</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-72" name="provider" class="cstm-checkbox" value="72"/>
+												<label for='provider-72'>Livescribe</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-73" name="provider" class="cstm-checkbox" value="73"/>
+												<label for='provider-73'>Lomega</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-74" name="provider" class="cstm-checkbox" value="74"/>
+												<label for='provider-74'>LumiPad</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-75" name="provider" class="cstm-checkbox" value="75"/>
+												<label for='provider-75'>Lumo</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-76" name="provider" class="cstm-checkbox" value="76"/>
+												<label for='provider-76'>MARLIGHT</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-77" name="provider" class="cstm-checkbox" value="77"/>
+												<label for='provider-77'>Master Kit</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-78" name="provider" class="cstm-checkbox" value="78"/>
+												<label for='provider-78'>Medisana</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-79" name="provider" class="cstm-checkbox" value="79"/>
+												<label for='provider-79'>MeteoStyle</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-80" name="provider" class="cstm-checkbox" value="80"/>
+												<label for='provider-80'>Mio</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-81" name="provider" class="cstm-checkbox" value="81"/>
+												<label for='provider-81'>Misfit</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-82" name="provider" class="cstm-checkbox" value="82"/>
+												<label for='provider-82'>Monoprice</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-83" name="provider" class="cstm-checkbox" value="83"/>
+												<label for='provider-83'>Most ERG</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-84" name="provider" class="cstm-checkbox" value="84"/>
+												<label for='provider-84'>Motorola</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-85" name="provider" class="cstm-checkbox" value="85"/>
+												<label for='provider-85'>MyKronoz</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-86" name="provider" class="cstm-checkbox" value="86"/>
+												<label for='provider-86'>Netatmo</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-87" name="provider" class="cstm-checkbox" value="87"/>
+												<label for='provider-87'>NetGear</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-88" name="provider" class="cstm-checkbox" value="88"/>
+												<label for='provider-88'>Nike</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-89" name="provider" class="cstm-checkbox" value="89"/>
+												<label for='provider-89'>No name</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-90" name="provider" class="cstm-checkbox" value="90"/>
+												<label for='provider-90'>Nvidia</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-91" name="provider" class="cstm-checkbox" value="91"/>
+												<label for='provider-91'>Oco</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-92" name="provider" class="cstm-checkbox" value="92"/>
+												<label for='provider-92'>Olloclip</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-93" name="provider" class="cstm-checkbox" value="93"/>
+												<label for='provider-93'>Onbo</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-94" name="provider" class="cstm-checkbox" value="94"/>
+												<label for='provider-94'>Orbotix</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-95" name="provider" class="cstm-checkbox" value="95"/>
+												<label for='provider-95'>Palm</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-96" name="provider" class="cstm-checkbox" value="96"/>
+												<label for='provider-96'>Parrot</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-97" name="provider" class="cstm-checkbox" value="97"/>
+												<label for='provider-97'>Pear</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-98" name="provider" class="cstm-checkbox" value="98"/>
+												<label for='provider-98'>Pebble</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-99" name="provider" class="cstm-checkbox" value="99"/>
+												<label for='provider-99'>Philips</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-100" name="provider" class="cstm-checkbox" value="100"/>
+												<label for='provider-100'>PhotoFast</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-101" name="provider" class="cstm-checkbox" value="101"/>
+												<label for='provider-101'>Pleo Pb</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-102" name="provider" class="cstm-checkbox" value="102"/>
+												<label for='provider-102'>Polar</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-103" name="provider" class="cstm-checkbox" value="103"/>
+												<label for='provider-103'>Powercube</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-104" name="provider" class="cstm-checkbox" value="104"/>
+												<label for='provider-104'>PowerUp</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-105" name="provider" class="cstm-checkbox" value="105"/>
+												<label for='provider-105'>Promate</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-106" name="provider" class="cstm-checkbox" value="106"/>
+												<label for='provider-106'>Redline</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-107" name="provider" class="cstm-checkbox" value="107"/>
+												<label for='provider-107'>Remee</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-108" name="provider" class="cstm-checkbox" value="108"/>
+												<label for='provider-108'>Robo-Sos</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-109" name="provider" class="cstm-checkbox" value="109"/>
+												<label for='provider-109'>Samsung</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-110" name="provider" class="cstm-checkbox" value="110"/>
+												<label for='provider-110'>Scanadu</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-111" name="provider" class="cstm-checkbox" value="111"/>
+												<label for='provider-111'>Silicon</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-112" name="provider" class="cstm-checkbox" value="112"/>
+												<label for='provider-112'>Sitecom</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-113" name="provider" class="cstm-checkbox" value="113"/>
+												<label for='provider-113'>Sititek</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-114" name="provider" class="cstm-checkbox" value="114"/>
+												<label for='provider-114'>Skybell</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-115" name="provider" class="cstm-checkbox" value="115"/>
+												<label for='provider-115'>Soeks</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-116" name="provider" class="cstm-checkbox" value="116"/>
+												<label for='provider-116'>Sonim</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-117" name="provider" class="cstm-checkbox" value="117"/>
+												<label for='provider-117'>Sony</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-118" name="provider" class="cstm-checkbox" value="118"/>
+												<label for='provider-118'>Spektrum</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-119" name="provider" class="cstm-checkbox" value="119"/>
+												<label for='provider-119'>Sportline</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-120" name="provider" class="cstm-checkbox" value="120"/>
+												<label for='provider-120'>STICK-N-FIND</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-121" name="provider" class="cstm-checkbox" value="121"/>
+												<label for='provider-121'>Striiv</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-122" name="provider" class="cstm-checkbox" value="122"/>
+												<label for='provider-122'>SuperWheel</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-123" name="provider" class="cstm-checkbox" value="123"/>
+												<label for='provider-123'>Suunto</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-124" name="provider" class="cstm-checkbox" value="124"/>
+												<label for='provider-124'>Switel</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-125" name="provider" class="cstm-checkbox" value="125"/>
+												<label for='provider-125'>Synology</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-126" name="provider" class="cstm-checkbox" value="126"/>
+												<label for='provider-126'>Taigen</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-127" name="provider" class="cstm-checkbox" value="127"/>
+												<label for='provider-127'>Tinke</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-128" name="provider" class="cstm-checkbox" value="128"/>
+												<label for='provider-128'>TomTom</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-129" name="provider" class="cstm-checkbox" value="129"/>
+												<label for='provider-129'>TrendNet</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-130" name="provider" class="cstm-checkbox" value="130"/>
+												<label for='provider-130'>Ugobe</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-131" name="provider" class="cstm-checkbox" value="131"/>
+												<label for='provider-131'>Upvel</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-132" name="provider" class="cstm-checkbox" value="132"/>
+												<label for='provider-132'>Wallet</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-133" name="provider" class="cstm-checkbox" value="133"/>
+												<label for='provider-133'>Whistle</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-134" name="provider" class="cstm-checkbox" value="134"/>
+												<label for='provider-134'>WigWag</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-135" name="provider" class="cstm-checkbox" value="135"/>
+												<label for='provider-135'>Windoro</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-136" name="provider" class="cstm-checkbox" value="136"/>
+												<label for='provider-136'>Withings</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-137" name="provider" class="cstm-checkbox" value="137"/>
+												<label for='provider-137'>World of Tanks (WoT)</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-138" name="provider" class="cstm-checkbox" value="138"/>
+												<label for='provider-138'>WowWee</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-139" name="provider" class="cstm-checkbox" value="139"/>
+												<label for='provider-139'>X-Rite</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-140" name="provider" class="cstm-checkbox" value="140"/>
+												<label for='provider-140'>Xbox</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-141" name="provider" class="cstm-checkbox" value="141"/>
+												<label for='provider-141'>Xiaomi (Mi)</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-142" name="provider" class="cstm-checkbox" value="142"/>
+												<label for='provider-142'>Zeiss</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-143" name="provider" class="cstm-checkbox" value="143"/>
+												<label for='provider-143'>Zipato</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="provider-144" name="provider" class="cstm-checkbox" value="144"/>
+												<label for='provider-144'>ZyXe</label>
+											</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="category-filter">
+								<div class="filter-dropdown">
+									<div class="filter-dropdown-title" onclick="toggle_dropdown('category-filter-3', 'dropdown-img-3')">
+										ЦВЕТ
+									</div>
+									<div class="dropdown-button-img dropdown-up" id="dropdown-img-3"></div>
+									<ul class="category-filter-list" id="category-filter-3">
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-1" name="color" class="cstm-checkbox" checked="checked"  value="1"/>
+												<label for='color-1'>Space Grey</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-2" name="color" class="cstm-checkbox" value="2"/>
+												<label for='color-2'>Бежевый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-3" name="color" class="cstm-checkbox" value="3"/>
+												<label for='color-3'>Белый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-4" name="color" class="cstm-checkbox" value="4"/>
+												<label for='color-4'>Белый/Серый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-5" name="color" class="cstm-checkbox" value="5"/>
+												<label for='color-5'>Бирюзовый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-6" name="color" class="cstm-checkbox" value="6"/>
+												<label for='color-6'>Бордовый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-7" name="color" class="cstm-checkbox" value="7"/>
+												<label for='color-7'>Бронзовый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-8" name="color" class="cstm-checkbox" value="8"/>
+												<label for='color-8'>Голубой</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-9" name="color" class="cstm-checkbox" value="9"/>
+												<label for='color-9'>Желтый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-10" name="color" class="cstm-checkbox" value="10"/>
+												<label for='color-10'>Зеленый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-11" name="color" class="cstm-checkbox" value="11"/>
+												<label for='color-11'>Золотой</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-13" name="color" class="cstm-checkbox" value="12"/>
+												<label for='color-13'>Кирпичный</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-14" name="color" class="cstm-checkbox" value="13"/>
+												<label for='color-14'>Коралловый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-15" name="color" class="cstm-checkbox" value="14"/>
+												<label for='color-15'>Коричневый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-16" name="color" class="cstm-checkbox" value="15"/>
+												<label for='color-16'>Красный</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-17" name="color" class="cstm-checkbox" value="16"/>
+												<label for='color-17'>Кремовый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-18" name="color" class="cstm-checkbox" value="17"/>
+												<label for='color-18'>Лайм</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-19" name="color" class="cstm-checkbox" value="18"/>
+												<label for='color-19'>Леопард</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-20" name="color" class="cstm-checkbox" value="19"/>
+												<label for='color-20'>Малиновый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-21" name="color" class="cstm-checkbox" value="20"/>
+												<label for='color-21'>Металлический</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-22" name="color" class="cstm-checkbox" value="21"/>
+												<label for='color-22'>Мятный</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-23" name="color" class="cstm-checkbox" value="22"/>
+												<label for='color-23'>Небесно-голубой</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-24" name="color" class="cstm-checkbox" value="23"/>
+												<label for='color-24'>Оранжевый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-25" name="color" class="cstm-checkbox" value="24"/>
+												<label for='color-25'>Прозрачно-матовый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-26" name="color" class="cstm-checkbox" value="25"/>
+												<label for='color-26'>Прозрачный</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-27" name="color" class="cstm-checkbox" value="26"/>
+												<label for='color-27'>Разноцветный</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-28" name="color" class="cstm-checkbox" value="27"/>
+												<label for='color-28'>Розовый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-29" name="color" class="cstm-checkbox" value="28"/>
+												<label for='color-29'>Светло-коричневый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-30" name="color" class="cstm-checkbox" value="29"/>
+												<label for='color-30'>Светло-серый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-31" name="color" class="cstm-checkbox" value="30"/>
+												<label for='color-31'>Серебристый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-32" name="color" class="cstm-checkbox" value="31"/>
+												<label for='color-32'>Серебро/Зеленый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-33" name="color" class="cstm-checkbox" value="32"/>
+												<label for='color-33'>Серебро/Черный</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-34" name="color" class="cstm-checkbox" value="33"/>
+												<label for='color-34'>Серый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-35" name="color" class="cstm-checkbox" value="34"/>
+												<label for='color-35'>Синий</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-36" name="color" class="cstm-checkbox" value="35"/>
+												<label for='color-36'>Сиреневый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-37" name="color" class="cstm-checkbox" value="36"/>
+												<label for='color-37'>Стальной</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-38" name="color" class="cstm-checkbox" value="37"/>
+												<label for='color-38'>Темно-зеленый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-39" name="color" class="cstm-checkbox" value="38"/>
+												<label for='color-39'>Темно-коричневый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-40" name="color" class="cstm-checkbox" value="39"/>
+												<label for='color-40'>Темно-серый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-41" name="color" class="cstm-checkbox" value="40"/>
+												<label for='color-41'>Темно-синий</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-42" name="color" class="cstm-checkbox" value="41"/>
+												<label for='color-42'>Фиолетовый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-43" name="color" class="cstm-checkbox" value="42"/>
+												<label for='color-43'>Хаки</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-44" name="color" class="cstm-checkbox" value="43"/>
+												<label for='color-44'>Хром</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-45" name="color" class="cstm-checkbox" value="44"/>
+												<label for='color-45'>Черный</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-46" name="color" class="cstm-checkbox" value="45"/>
+												<label for='color-46'>Черный/Белый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-47" name="color" class="cstm-checkbox" value="46"/>
+												<label for='color-47'>Черный/Зеленый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-48" name="color" class="cstm-checkbox" value="47"/>
+												<label for='color-48'>Черный/Золотой</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-49" name="color" class="cstm-checkbox" value="48"/>
+												<label for='color-49'>Черный/Серый</label>
+											</span>
+										</li>
+										<li>
+											<span class="checkbox-item">
+												<input type="checkbox" id="color-50" name="color" class="cstm-checkbox" value="49"/>
+												<label for='color-50'>Шампань</label>
+											</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="right-sidebar">
+							<div class="right-sidebar-tools">
+								<div class="sort-goods-tools">
+									<select class="sort-goods-select">
+										<option value="price">Цене</option>
+										<option value="price">Названию</option>
+										<option value="price">Артикулу</option>
+									</select>
+									<a class="sort-goods-direction" id="category-sort-direction" onclick="toggle_class('category-sort-direction', 'direction_down')"></a>									
+								</div>
+								<div class="page-limiter">
+									Выводить по:
+									<span class="page-limiter-links">
+										<a href="">20</a> |
+										<a href="" class="active">50</a> |
+										<a href="">100</a>
+									</span>
+								</div>
+							</div>
+							<div class="category-goods-list">
+								<div class="main-goods-item">
+									<div class="goods-item-top-info">
+										<div class="goods-item-presence">2-3 дня</div>
+										<div class="goods-item-articul">Арт. 11111</div>
+									</div>
+									<div class="goods-item-photo goods-item-photo-slider">
+										<ul class="bxslider">
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_1.png"/></li>
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_2.png"/></li>
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_3.png"/></li>
+										</ul>
+									</div>
+									<div class="goods-item-bottom-info">
+										<div class="good-item-name">
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+										</div>
+										<div class="good-item-price">589.00<span class="rub-sign">a</span></div>
+									</div>
+									<div class="goods-item-tools">
+										<a href="" class="button goods-item-tools-button button-incard">
+											<div class="button-label">
+												<div class="button-img"></div>
+												<span class="button-label-text">В корзину</span>
+											</div>
+										</a>
+										<a href="" class="button goods-item-tools-button button-next">
+											<div class="button-label">
+												<div class="button-img"></div>
+												<span class="button-label-text">Далее</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="main-goods-item">
+									<div class="goods-item-top-info">
+										<div class="goods-item-presence">2-3 дня</div>
+										<div class="goods-item-articul">Арт. 11111</div>
+									</div>
+									<div class="goods-item-photo goods-item-photo-slider">
+										<ul class="bxslider">
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_1.png"/></li>
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_2.png"/></li>
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_3.png"/></li>
+										</ul>
+									</div>
+									<div class="goods-item-bottom-info">
+										<div class="good-item-name">
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+										</div>
+										<div class="good-item-price">589.00<span class="rub-sign">a</span></div>
+									</div>
+									<div class="goods-item-tools">
+										<a href="" class="button goods-item-tools-button button-incard">
+											<div class="button-label">
+												<div class="button-img"></div>
+												<span class="button-label-text">В корзину</span>
+											</div>
+										</a>
+										<a href="" class="button goods-item-tools-button button-next">
+											<div class="button-label">
+												<div class="button-img"></div>
+												<span class="button-label-text">Далее</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="main-goods-item">
+									<div class="goods-item-top-info">
+										<div class="goods-item-presence">2-3 дня</div>
+										<div class="goods-item-articul">Арт. 11111</div>
+									</div>
+									<div class="goods-item-photo goods-item-photo-slider">
+										<ul class="bxslider">
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_1.png"/></li>
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_2.png"/></li>
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_3.png"/></li>
+										</ul>
+									</div>
+									<div class="goods-item-bottom-info">
+										<div class="good-item-name">
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+										</div>
+										<div class="good-item-price">589.00<span class="rub-sign">a</span></div>
+									</div>
+									<div class="goods-item-tools">
+										<a href="" class="button goods-item-tools-button button-incard">
+											<div class="button-label">
+												<div class="button-img"></div>
+												<span class="button-label-text">В корзину</span>
+											</div>
+										</a>
+										<a href="" class="button goods-item-tools-button button-next">
+											<div class="button-label">
+												<div class="button-img"></div>
+												<span class="button-label-text">Далее</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="main-goods-item">
+									<div class="goods-item-top-info">
+										<div class="goods-item-presence">2-3 дня</div>
+										<div class="goods-item-articul">Арт. 11111</div>
+									</div>
+									<div class="goods-item-photo goods-item-photo-slider">
+										<ul class="bxslider">
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_1.png"/></li>
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_2.png"/></li>
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_3.png"/></li>
+										</ul>
+									</div>
+									<div class="goods-item-bottom-info">
+										<div class="good-item-name">
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+										</div>
+										<div class="good-item-price">589.00<span class="rub-sign">a</span></div>
+									</div>
+									<div class="goods-item-tools">
+										<a href="" class="button goods-item-tools-button button-incard">
+											<div class="button-label">
+												<div class="button-img"></div>
+												<span class="button-label-text">В корзину</span>
+											</div>
+										</a>
+										<a href="" class="button goods-item-tools-button button-next">
+											<div class="button-label">
+												<div class="button-img"></div>
+												<span class="button-label-text">Далее</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="main-goods-item">
+									<div class="goods-item-top-info">
+										<div class="goods-item-presence">Предзаказ</div>
+										<div class="goods-item-articul">Арт. 11111</div>
+									</div>
+									<div class="goods-item-photo goods-item-photo-slider">
+										<ul class="bxslider">
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_1.png"/></li>
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_2.png"/></li>
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_3.png"/></li>
+										</ul>
+									</div> 
+									<div class="goods-item-bottom-info">
+										<div class="good-item-name">
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+										</div>
+										<div class="good-item-price">
+											<span class="good-item-price-value old-price">589.00<span class="rub-sign">a</span></span>
+											<span class="good-item-price-new">489.00<span class="rub-sign">a</span></span>
+										</div>
+									</div>
+									<div class="goods-item-tools">
+										<a href="" class="button goods-item-tools-button button-incard">
+											<div class="button-label">
+												<div class="button-img"></div>
+												<span class="button-label-text">В корзину</span>
+											</div>
+										</a>
+										<a href="" class="button goods-item-tools-button button-next">
+											<div class="button-label">
+												<div class="button-img"></div>
+												<span class="button-label-text">Далее</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="main-goods-item">
+									<div class="goods-item-top-info">
+										<div class="goods-item-presence">Предзаказ</div>
+										<div class="goods-item-articul">Арт. 11111</div>
+									</div>
+									<div class="goods-item-photo goods-item-photo-slider">
+										<ul class="bxslider">
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_1.png"/></li>
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_2.png"/></li>
+											<li class="goods-item-photo-item"><img src="DESIGN/img/goods_3.png"/></li>
+										</ul>
+									</div> 
+									<div class="goods-item-bottom-info">
+										<div class="good-item-name">
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+											<div class="good-item-name-line">Samsung Galaxy Watch</div>
+										</div>
+										<div class="good-item-price">
+											<span class="good-item-price-value old-price">589.00<span class="rub-sign">a</span></span>
+											<span class="good-item-price-new">489.00<span class="rub-sign">a</span></span>
+										</div>
+									</div>
+									<div class="goods-item-tools">
+										<a href="" class="button goods-item-tools-button button-incard">
+											<div class="button-label">
+												<div class="button-img"></div>
+												<span class="button-label-text">В корзину</span>
+											</div>
+										</a>
+										<a href="" class="button goods-item-tools-button button-next">
+											<div class="button-label">
+												<div class="button-img"></div>
+												<span class="button-label-text">Далее</span>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+				<div class="footer-content">
+					<div class="top-footer">
+						<div class="top-footer-lside">
+							<div class="footer-logo-title">
+								<div class="main-logo">
+									<a href="">
+										<img src="DESIGN/img/logo.png" alt="YaMobail" class="main-logo-img"/>
+									</a>
+								</div>
+								<div class="main-title">
+									гаджеты<br/>и аксесуары
+								</div>
+							</div>
+							<div class="footer-site-info">
+								<p>Nunc eu purus nec elit dapibus rutrum. Integer nibh dui, aliquet in leo eget, porta tincidunt quam.</p>
+								<p>Vivamus non metus est. Etiam eu tellus justo. Vivamus placerat vestibulum eleifend. Sed viverra felis ante, id viverra enim pellentesque vitae.</p>
+								<a href="" class="info-next">
+										<div class="next-circle-img"></div>
+										<div class="info-next-label">Далее</div>
+								</a>
+							</div>
+						</div>
+						<div class="top-footer-mside">
+							<div class="top-footer-side-title">ПОСЛЕДНИЕ НОВОСТИ</div>
+							<div class="footer-news">
+								<div class="footer-news-item">
+									<img src="DESIGN/img/slider_1.png" class="footer-news-item-img"/>
+									<div class="footer-news-item-info">
+										<div class="footer-news-item-title">Последняя новость</div>
+										<div class="footer-news-item-text">
+											<p>
+												Suspendisse consectetur ligula vitae leo faucibus, a tincidunt leo...<br/>
+												<span class="footer-news-item-date">21 December, 2017</span>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="footer-news-item">
+									<img src="DESIGN/img/slider_1.png" class="footer-news-item-img"/>
+									<div class="footer-news-item-info">
+										<div class="footer-news-item-title">Последняя новость</div>
+										<div class="footer-news-item-text">
+											<p>
+												Suspendisse consectetur ligula vitae leo faucibus, a tincidunt leo...<br/>
+												<span class="footer-news-item-date">21 December, 2017</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="top-footer-rside">
+							<div class="top-footer-side-title">ОБРАТНАЯ СВЯЗЬ</div>
+							<form class="callback-form">
+								<input class="callback-form-input" type="text" placeholder="Имя"/>
+								<input class="callback-form-input" type="text" placeholder="e-mail@gamil.com"/>
+								<textarea class="callback-form-textarea"></textarea>
+								<button type="submit" class="button callback-form-submit">ОТПРАВИТЬ</button>
+							</form>
+						</div>
+					</div>
+					<div class="middle-footer">
+						<ul class="social-info">
+							<li class="social-info-logo">
+								<a href="http://vk.com/yamobail"><img src="DESIGN/img/vk.png"/></a>
+							</li>
+							<li class="social-info-logo">
+								<a href=""><img src="DESIGN/img/fb.png"/></a>
+							</li>
+							<li class="social-info-logo">
+								<a href=""><img src="DESIGN/img/tw.png"/></a>
+							</li>
+							<li class="social-info-logo">
+								<a href=""><img src="DESIGN/img/ok.png"/></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-nav">
+					<div class="footer-nav-content">
+						<div class="copyright-string">Copyright 2016 <a href="" class="blue-link">YaMobail</a>. All right reserved.</div>
+						<ul class="footer-nav-list">
+							<li class="footer-nav-item"><a href=""  class="blue-link">Главная</a></li>
+							<li class="footer-nav-item"><a href="">Новости</a></li>
+							<li class="footer-nav-item"><a href="">О Магазине</a></li>
+							<li class="footer-nav-item"><a href="">Гарантия</a></li>
+							<li class="footer-nav-item"><a href="">Доставка</a></li>
+							<li class="footer-nav-item"><a href="">Оплата</a></li>
+							<li class="footer-nav-item"><a href="">Гарантии</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
