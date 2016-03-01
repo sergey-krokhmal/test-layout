@@ -54,6 +54,10 @@
 
 /* MAIN */
 
+*{
+	outline: none;
+}
+
 body {
 	margin: 0;
 	font-family: 'Lato', sans-serif;
@@ -147,6 +151,9 @@ body {
 .header-tools {
 	padding-top: 25px;
 	height: 53px;
+	box-sizing: border-content;
+	-moz-box-sizing: border-content;
+	-webkit-box-sizing: border-content;
 }
 
 .main-logo {
@@ -751,9 +758,11 @@ body {
 }
 
 .good-item-name {
-	height: 39px;
-	padding: 21px 21px 0 21px;
-	
+	height: 72px;
+	padding: 11px 20px 0 20px;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 .good-item-name-line {
@@ -763,13 +772,15 @@ body {
 }
 
 .good-item-price {
-	height: 63px;
-    line-height: 63px;
+	height: 51px;
+    line-height: 50px;
     font-size: 19px;
     font-weight: bold;
-    padding-left: 21px;
+    padding-left: 20px;
     display: block;
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 .good-item-price-value{
@@ -1070,7 +1081,6 @@ body {
 	color: #396596;
 	font-size: 17px;
 	display:inline-block;
-	cursor: pointer;
 }
 
 .dropdown-button-img{
@@ -1078,6 +1088,7 @@ body {
 	width: 16px;
 	height: 16px;
 	background-repeat: no-repeat;
+	cursor: pointer;
 }
 
 .dropdown-button-img.dropdown-up{
@@ -1133,6 +1144,19 @@ body {
 }
 
 .category-filter .custom-checkbox.checked{
+	background-image: url('../img/checkbox_active.png');
+}
+
+.left-sidebar .custom-radio{
+	width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    display: inline-block;
+    background-image: url('../img/checkbox.png');
+	background-repeat: no-repeat;
+}
+
+.category-filter .custom-radio.checked{
 	background-image: url('../img/checkbox_active.png');
 }
 
